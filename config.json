@@ -1,0 +1,154 @@
+{
+  "deepseek": {
+    "api_key": "sk-fe48f98a76c24674ae06eee174ed6727",
+    "model": "deepseek-chat",
+    "base_url": "https://api.deepseek.com",
+    "max_tokens": 1500,
+    "temperature": 0.1,
+    "timeout": 30
+  },
+  "qwen": {
+    "api_key": "sk-329e55dacc034cb59e749ff94bf58475",
+    "model": "qwen-plus",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "max_tokens": 1500,
+    "temperature": 0.1,
+    "timeout": 30
+  },
+  "gpt4o": {
+    "api_key": "sk-wpVKFSNJ4sIH2Mig35nLHw9QEbTngw5tHgLqnczQiC7kmixq",
+    "model": "gpt-4o-2024-11-20",
+    "base_url": "https://api.chatfire.cn",
+    "max_tokens": 1500,
+    "temperature": 0.1,
+    "timeout": 35
+  },
+  "glm4": {
+    "api_key": "sk-064239f447894108a4be5704067745fd",
+    "model": "glm-4.5",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "max_tokens": 1500,
+    "temperature": 0.1,
+    "timeout": 40
+  },
+  "claude": {
+    "api_key": "sk-In5BVEOTRqWQRzykRIrUvrporh3v8fFU1kfwnMRTweZqV4Cb",
+    "model": "claude-3-5-sonnet-20241022",
+    "base_url": "https://api.chatfire.cn/v1/chat/completions",
+    "max_tokens": 1500,
+    "temperature": 0.1,
+    "timeout": 35
+  },
+  "gemini": {
+    "api_key": "sk-jfvrOf4P3hMBSPlUZUmrxV3fYVlGlZuNPpji5SccptmJClat",
+    "model": "gemini-2.0-flash",
+    "base_url": "https://api.chatfire.cn/v1/chat/completions",
+    "max_tokens": 1500,
+    "temperature": 0.1,
+    "timeout": 35
+  },
+  "ollama_qwen": {
+    "api_key": "sk-ollama-local-opensource-model-dummy-key",
+    "model": "qwen2.5:7b",
+    "base_url": "http://localhost:11434",
+    "max_tokens": 1500,
+    "temperature": 0.1,
+    "timeout": 60,
+    "is_opensource": true,
+    "description": "Alibaba Qwen 2.5 7B - Open Source (via Ollama)"
+  },
+  "ollama_llama3": {
+    "api_key": "sk-ollama-local-opensource-model-dummy-key",
+    "model": "llama3:8b",
+    "base_url": "http://localhost:11434",
+    "max_tokens": 1500,
+    "temperature": 0.1,
+    "timeout": 60,
+    "is_opensource": true,
+    "description": "Meta Llama 3 8B - Open Source (via Ollama)"
+  },
+  "active_llm": "ollama_llama3",
+  "ppo": {
+    "max_episodes": 15,
+    "max_steps_per_episode": 8,
+    "learning_rate": 0.002,
+    "gamma": 0.99,
+    "clip_ratio": 0.2,
+    "value_clip": 0.2,
+    "entropy_coeff": 0.01,
+    "gae_lambda": 0.95,
+    "action_dimension": 6,
+    "state_dimension": 3,
+    "hidden_dim": 64,
+    "batch_size": 32,
+    "ppo_epochs": 4,
+    "buffer_size": 256,
+    "early_stop_patience": 6,
+    "reward_scale_factor": 1.5
+  },
+  "optimization": {
+    "use_real_pde": true,
+    "convergence_threshold": 0.25,
+    "safety_factor_min": 1.05,
+    "force_pde_interval": 3,
+    "exploration_decay": 0.85,
+    "min_exploration": 0.25,
+    "max_exploration": 0.85,
+    "thickness_step_factor": 0.12,
+    "modulus_step_factor": 0.18
+  },
+  "subgrade_protection": {
+    "enabled": true,
+    "pavement_layers": 3,
+    "allow_subgrade_optimization": false,
+    "modeling_type": "winkler_springs",
+    "default_soil_modulus": 50
+  },
+  "reward_weights": {
+    "safety_weight": 0.65,
+    "economy_weight": 0.20,
+    "constraint_weight": 0.15,
+    "penalty_scale": 0.20
+  },
+  "layer_constraints": {
+    "pavement_thickness_min": [6, 15, 8],
+    "pavement_thickness_max": [40, 80, 60],
+    "pavement_modulus_min": [600, 150, 40],
+    "pavement_modulus_max": [3500, 1000, 400]
+  },
+  "convergence_criteria": {
+    "consecutive_success_required": 3,
+    "convergence_patience": 6,
+    "min_training_episodes": 6
+  },
+  "step_size_config": {
+    "thickness_step": 5.0,
+    "modulus_step": 100.0,
+    "max_thickness_steps": 7,
+    "max_modulus_steps": 7
+  },
+  "ablation_experiment": {
+    "repeat_times": 3,
+    "max_training_episodes": 8,
+    "timeout_seconds": 150,
+    "enable_detailed_logging": true,
+    "save_intermediate_results": true
+  },
+  "material_prices": {
+    "surface_layer": 950,
+    "base_layer": 280,
+    "subbase_layer": 160,
+    "unit": "元/m³",
+    "price_variation_enabled": true
+  },
+  "evaluation_metrics": {
+    "design_safety_ratio": {
+      "thresholds": {
+        "stress_factor": 1.12,
+        "strain_factor": 1.12,
+        "deflection_factor": 1.08
+      },
+      "enable_continuous_scoring": true
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "ablation_experiment": {
+    "name": "iLLM_PD_Framework_Ablation_Study",
+    "version": "v1.0_Paper_Consistent",
+    "description": "Ablation study for LLM-integrated reinforcement learning road structure design framework",
+    "experiment_date": "2024-09-29",
+    "repeat_times": 3,
+    "max_training_episodes": 10,
+    "timeout_seconds": 150,
+    "random_seed_base": 12345,
+    "enable_seed_variation": true
+  },
+  "shared_ppo_config": {
+    "max_episodes": 10,
+    "max_steps_per_episode": 6,
+    "learning_rate": 0.002,
+    "gamma": 0.99,
+    "epsilon": 0.2,
+    "batch_size": 32,
+    "ppo_epochs": 4,
+    "buffer_size": 256,
+    "entropy_coeff": 0.01,
+    "value_clip": 0.2,
+    "gae_lambda": 0.95,
+    "exploration_decay": 0.9,
+    "min_exploration": 0.3,
+    "max_exploration": 0.7
+  },
+  "shared_deepseek_config": {
+    "api_key": "sk-fe48f98a76c24674ae06eee174ed6727",
+    "model": "deepseek-chat",
+    "base_url": "https://api.deepseek.com",
+    "max_tokens": 800,
+    "temperature": 0.1,
+    "timeout": 20,
+    "retry_attempts": 2
+  },
+  "ablation_variants": {
+    "no_llm_parsing": {
+      "description": "Remove LLM semantic parsing module, using expert-preset structured parameters instead of natural language processing, but retain LLM hybrid decision guidance in PPO optimization",
+      "use_external_llm_parsing": false,
+      "use_llm_guidance": true,
+      "use_constraints": true,
+      "use_rollback": true,
+      "llm_guidance_weight": 0.3,
+      "input_source": "expert_preset"
+    },
+    "no_llm_guidance": {
+      "description": "Retain LLM semantic parsing but disable LLM hybrid decision mechanism during RL optimization, setting mixing weight beta to 0, using pure RL policy",
+      "use_external_llm_parsing": true,
+      "use_llm_guidance": false,
+      "use_constraints": true,
+      "use_rollback": true,
+      "llm_guidance_weight": 0
+    },
+    "reduced_stability": {
+      "description": "Retain full LLM functionality but remove or weaken training stability mechanisms: disable adaptive exploration (use fixed rate), remove network health monitoring, simplify gradient stability control",
+      "use_external_llm_parsing": true,
+      "use_llm_guidance": true,
+      "use_constraints": false,
+      "use_rollback": false,
+      "use_adaptive_exploration": false,
+      "use_network_monitoring": false,
+      "use_gradient_stability": false,
+      "fixed_exploration_rate": 0.5,
+      "enable_parameter_bounds": false,
+      "llm_guidance_weight": 0.3
+    },
+    "full_system": {
+      "description": "Complete iLLM-PD framework as control group for comparison with the three ablation variants",
+      "use_external_llm_parsing": true,
+      "use_llm_guidance": true,
+      "use_constraints": true,
+      "use_rollback": true,
+      "use_adaptive_exploration": true,
+      "use_network_monitoring": true,
+      "use_gradient_stability": true,
+      "llm_guidance_weight": 0.3
+    }
+  },
+  "test_scenarios": [
+    {
+      "id": 1,
+      "name": "Heavy-duty Highway",
+      "category": "heavy_highway",
+      "natural_language": "Asphalt pavement design for heavy-duty highway, axle load BZZ-100, design life 20 years",
+      "expert_params": {
+        "thickness": [20, 40, 30],
+        "modulus": [1500, 850, 320],
+        "poisson": [0.3, 0.25, 0.4],
+        "subgrade_modulus": 55
+      }
+    },
+    {
+      "id": 2,
+      "name": "Medium Subgrade Highway",
+      "category": "medium_subgrade",
+      "natural_language": "Asphalt pavement design for highway with medium subgrade",
+      "expert_params": {
+        "thickness": [20, 30, 20],
+        "modulus": [1400, 700, 280],
+        "poisson": [0.3, 0.25, 0.35],
+        "subgrade_modulus": 35
+      }
+    },
+    {
+      "id": 3,
+      "name": "Urban Arterial Road",
+      "category": "urban_road",
+      "natural_language": "Asphalt pavement design for urban arterial road",
+      "expert_params": {
+        "thickness": [15, 30, 20],
+        "modulus": [1300, 650, 280],
+        "poisson": [0.3, 0.25, 0.35],
+        "subgrade_modulus": 40
+      }
+    },
+    {
+      "id": 4,
+      "name": "Soft Subgrade Section",
+      "category": "soft_subgrade",
+      "natural_language": "Asphalt pavement design for soft subgrade section",
+      "expert_params": {
+        "thickness": [20, 35, 25],
+        "modulus": [1200, 600, 250],
+        "poisson": [0.3, 0.25, 0.35],
+        "subgrade_modulus": 20
+      }
+    }
+  ],
+  "evaluation_metrics": {
+    "design_safety_ratio": {
+      "description": "Safety factors for three key indicators based on JTG D50-2017: surface tensile stress, base tensile strain, and subgrade deflection",
+      "thresholds": {
+        "stress_safety_factor": 1.15,
+        "strain_safety_factor": 1.15,
+        "deflection_safety_factor": 1
+      }
+    },
+    "total_cost": {
+      "description": "Unit area pavement structure cost based on material unit prices",
+      "target_range": [350, 500],
+      "unit": "CNY/m²"
+    },
+    "convergence_efficiency": {
+      "description": "Training episodes required for each variant to reach convergence",
+      "max_episodes": 15
+    },
+    "design_success_rate": {
+      "description": "Proportion of successful design optimizations across all test scenarios"
+    },
+    "training_stability": {
+      "description": "Ratio of successful episodes to total episodes, reflecting algorithm stability"
+    }
+  },
+  "shared_material_prices": {
+    "surface_layer": 950,
+    "base_layer": 280,
+    "subbase_layer": 160,
+    "unit": "CNY/m³"
+  },
+  "shared_pde_modeling": {
+    "default_load_pressure": 0.7,
+    "default_load_radius": 21.3,
+    "boundary_method": "winkler_springs",
+    "enable_fallback": true
+  },
+  "output_settings": {
+    "save_results": true,
+    "results_file": "iLLM_PD_ablation_results.mat",
+    "report_file": "iLLM_PD_ablation_study_report.txt",
+    "verbose": true,
+    "detailed_logging": true
+  }
+}
