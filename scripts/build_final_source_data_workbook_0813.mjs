@@ -1,10 +1,10 @@
-import fs from "node:fs/promises";
+﻿import fs from "node:fs/promises";
 import path from "node:path";
 import { SpreadsheetFile, Workbook } from "@oai/artifact-tool";
 
-const root = "D:\\iLLM_PD_new_clean_NC_resubmit_0812";
+const root = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/(.:)/, "$1")), "..");
 const tableDir = path.join(root, "Source_Data", "_final_tables_0813");
-const outPath = path.join(root, "Source_Data", "SourceData_iLLM-PD_NC_final_0813.xlsx");
+const outPath = path.join(root, "Source_Data", "SourceData_iLLM-PD_NC_final.xlsx");
 
 const sheets = [
   "README",

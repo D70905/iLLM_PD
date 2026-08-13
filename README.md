@@ -1,4 +1,4 @@
-# iLLM-PD
+﻿# iLLM-PD
 
 This repository provides the code, configuration files, figure-generation scripts,
 and curated result tables used for the 0813 revised Nature Communications manuscript
@@ -42,7 +42,7 @@ repository during package construction.
 Use this workbook for the 0813 resubmission:
 
 ```text
-Source_Data/SourceData_iLLM-PD_NC_final_0813.xlsx
+Source_Data/SourceData_iLLM-PD_NC_final.xlsx
 ```
 
 The workbook contains 10 flat worksheets: README, source index, Table 1, Table 2, and

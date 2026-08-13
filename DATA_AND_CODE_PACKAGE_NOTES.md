@@ -1,4 +1,4 @@
-# Clean Package Notes
+﻿# Clean Package Notes
 
 Original working repository: private local working copy.
 
@@ -10,7 +10,7 @@ raw database files, logs, caches, manuscript drafts, and historical response fol
 
 The 0813 update synchronizes the clean package with the latest manuscript changes:
 Fig. 3 is LTPP-only, NCAT is not included as a main-figure Source Data sheet, and
-the final upload workbook is `Source_Data/SourceData_iLLM-PD_NC_final_0813.xlsx`.
+the final upload workbook is `Source_Data/SourceData_iLLM-PD_NC_final.xlsx`.
 
 ## Excluded by construction
 

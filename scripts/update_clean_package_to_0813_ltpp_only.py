@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from pathlib import Path
 import shutil
@@ -68,7 +68,7 @@ def main() -> None:
             "- Whether final Source Data should be uploaded as the root `SourceData_iLLM-PD_resubmit_0730.xlsx`\n"
             "  or as separate per-figure files under `Source_Data/`\n"
             "- Whether trained PPO checkpoints should be deposited separately if required by the editor\n",
-            "- Use `Source_Data/SourceData_iLLM-PD_NC_final_0813.xlsx` as the final Source Data upload candidate.\n"
+            "- Use `Source_Data/SourceData_iLLM-PD_NC_final.xlsx` as the final Source Data upload candidate.\n"
             "- Whether trained PPO checkpoints should be deposited separately if required by the editor.\n",
         )
         text = text.replace(

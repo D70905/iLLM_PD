@@ -1,10 +1,10 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from pathlib import Path
 import pandas as pd
 
 
-ROOT = Path(r"D:\iLLM_PD_new_clean_NC_resubmit_0812")
+ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "Source_Data" / "_final_tables_0813"
 OLD_WB = ROOT / "Source_Data" / "SourceData_iLLM-PD_resubmit_0730.xlsx"
 FIG2_0813 = Path(r"C:\Users\Ivy\Documents\iLLM_PD\output\fig2_04_1034_cost_heatmap_0813")
@@ -181,7 +181,7 @@ def main() -> None:
     write_csv("Supplementary_source_index", index)
 
     readme = pd.DataFrame([
-        ["Workbook", "SourceData_iLLM-PD_NC_final_0813.xlsx"],
+        ["Workbook", "SourceData_iLLM-PD_NC_final.xlsx"],
         ["Purpose", "Final source data workbook for Nature Communications resubmission"],
         ["Structure", "Each worksheet is a flat data table with one header row and no embedded explanatory text rows"],
         ["Units", "Units are provided in column headers where applicable"],

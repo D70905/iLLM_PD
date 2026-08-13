@@ -1,11 +1,11 @@
-from pathlib import Path
+﻿from pathlib import Path
 import json
 import pandas as pd
 from openpyxl import load_workbook
 
 
-ROOT = Path(r"D:\iLLM_PD_new_clean_NC_resubmit_0812")
-WB = ROOT / "Source_Data" / "SourceData_iLLM-PD_NC_final_0813.xlsx"
+ROOT = Path(__file__).resolve().parents[1]
+WB = ROOT / "Source_Data" / "SourceData_iLLM-PD_NC_final.xlsx"
 TABLES = ROOT / "Source_Data" / "_final_tables_0813"
 
 EXPECTED = [

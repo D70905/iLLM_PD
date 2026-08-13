@@ -1,4 +1,4 @@
-# Reproducibility Notes
+﻿# Reproducibility Notes
 
 This clean package separates three levels of reproducibility.
 
@@ -28,18 +28,18 @@ python -c "from specs.jtg_d50 import JTGSpecification; print('spec import OK')"
 
 | Manuscript item | Primary files in this package |
 | --- | --- |
-| Fig. 2 | `Source_Data/SourceData_iLLM-PD_NC_final_0813.xlsx` sheet `Fig2_trajectory`; `output/fig2_04_1034_cost_heatmap_0813` in the working repository |
+| Fig. 2 | `Source_Data/SourceData_iLLM-PD_NC_final.xlsx` sheet `Fig2_trajectory`; `output/fig2_04_1034_cost_heatmap_0813` in the working repository |
 | Fig. 3 | `figures/final/Fig3_LTPP_only_true_delivered_redraw.png`; `figures/final/Fig3_LTPP_only_true_delivered_redraw_wrapped.svg`; `figures/source/Fig3_LTPP_only_true_delivered_source_data.csv` |
 | Fig. 4 | `figures/final/Fig4_comparison_practice_v2.*`; `figures/source/Fig4_comparison_practice_v2_source_data*.csv` |
 | Fig. 5 | `figures/final/fig6_climate_4panel.*`; `experiments/batch_climate_12sections_summary.csv` |
 | Robustness/OOD figure | `figures/final/fig7_final.*`; `experiments/ltpp_data/deliverables/ood_stress/ood_aggregate_20260723_133102.csv` |
-| Table 1 | `Source_Data/SourceData_iLLM-PD_NC_final_0813.xlsx` sheet `Table1_LTPP_sections` |
+| Table 1 | `Source_Data/SourceData_iLLM-PD_NC_final.xlsx` sheet `Table1_LTPP_sections` |
 | Table 2 | `experiments/ltpp_data/deliverables/ablation_inference/ablation_table2.csv` |
 
 The final Source Data workbook for the 0813 resubmission is:
 
 ```text
-Source_Data/SourceData_iLLM-PD_NC_final_0813.xlsx
+Source_Data/SourceData_iLLM-PD_NC_final.xlsx
 ```
 
 The workbook was generated from `Source_Data/_final_tables_0813/` and verified by
