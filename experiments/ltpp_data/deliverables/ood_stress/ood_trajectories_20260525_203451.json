@@ -1,0 +1,647 @@
+[
+  {
+    "case_id": "sg_very_soft",
+    "category": "subgrade",
+    "pavement_type": "semi_rigid",
+    "mode": "surrogate_only",
+    "seed": 0,
+    "n_steps": 20,
+    "total_reward": 13.7314,
+    "mean_reward": 0.6866,
+    "min_reward": 0.6305,
+    "final_dsr": 1.0,
+    "final_scr": 1.0,
+    "scr_trajectory": 1.0,
+    "B1": 49.312,
+    "B2": 3.673,
+    "B3": 1.603,
+    "B4": 3.593,
+    "final_h1_cm": 2.0,
+    "final_h2_cm": 14.9,
+    "final_h3_cm": 6.7,
+    "final_h4_cm": 44.5,
+    "final_h5_cm": 16.3,
+    "n_guard_violations": 0,
+    "n_fea_escalations": 0,
+    "escalation_rate": 0.0,
+    "n_surrogate_calls": 0,
+    "mean_gen_confidence": null,
+    "mean_evaluator_score": null,
+    "NPV_usd": 73.05,
+    "C_const_cny": 432.1,
+    "wall_clock_sec": 77.2,
+    "status": "ok",
+    "trajectory": [
+      {
+        "step": 0,
+        "reward": 0.7029520934928054,
+        "B1": 17.43859317292779,
+        "B3": 1.6619263747790523,
+        "B4": 2.455319309758781,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 1,
+        "reward": 0.7234988927163744,
+        "B1": 17.062362598771724,
+        "B3": 1.6262297446538991,
+        "B4": 2.44045736232913,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 2,
+        "reward": 0.724342584268324,
+        "B1": 17.893855776640315,
+        "B3": 1.5904920739276966,
+        "B4": 2.469881541082081,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 3,
+        "reward": 0.7240366692425647,
+        "B1": 19.14396805886681,
+        "B3": 1.5702760379738399,
+        "B4": 2.5157501769715562,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 4,
+        "reward": 0.71989752771186,
+        "B1": 20.496117830788826,
+        "B3": 1.5525901616330882,
+        "B4": 2.56410497892811,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 5,
+        "reward": 0.7155453991749694,
+        "B1": 21.953644481680943,
+        "B3": 1.5376156627679183,
+        "B4": 2.615025001083154,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 6,
+        "reward": 0.7109739243593101,
+        "B1": 23.518043403618595,
+        "B3": 1.5254953419992587,
+        "B4": 2.668567856310733,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 7,
+        "reward": 0.7061772329254588,
+        "B1": 25.188852147552073,
+        "B3": 1.5163392650266012,
+        "B4": 2.72477818356995,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 8,
+        "reward": 0.7011498915045467,
+        "B1": 26.963224712775975,
+        "B3": 1.5102326130871142,
+        "B4": 2.7836842172556353,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 9,
+        "reward": 0.6958869108433219,
+        "B1": 28.835475289146043,
+        "B3": 1.5072433302213075,
+        "B4": 2.8452964972633796,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 10,
+        "reward": 0.6790379751800805,
+        "B1": 25.515895771746592,
+        "B3": 1.5430845469078571,
+        "B4": 2.693782535924232,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 11,
+        "reward": 0.6846450762365878,
+        "B1": 32.86211309541771,
+        "B3": 1.507543587464551,
+        "B4": 2.9772040610009483,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 12,
+        "reward": 0.6787035260053951,
+        "B1": 34.9584589903311,
+        "B3": 1.5089855950570654,
+        "B4": 3.0467238764378575,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 13,
+        "reward": 0.6725282275572899,
+        "B1": 37.095611357915715,
+        "B3": 1.5133086716984674,
+        "B4": 3.1187592954890766,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 14,
+        "reward": 0.6661107341574664,
+        "B1": 39.24908893222462,
+        "B3": 1.520554560209858,
+        "B4": 3.1931368763106214,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 15,
+        "reward": 0.6594517204510676,
+        "B1": 41.39279617750266,
+        "B3": 1.5307685656797239,
+        "B4": 3.269683768163235,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 16,
+        "reward": 0.6525535038206385,
+        "B1": 43.49886592581363,
+        "B3": 1.5440038506621199,
+        "B4": 3.348191058325034,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 17,
+        "reward": 0.6454200468728776,
+        "B1": 45.53876782057241,
+        "B3": 1.5603238387024498,
+        "B4": 3.4284134426270976,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 18,
+        "reward": 0.6380569182734723,
+        "B1": 47.48483512524742,
+        "B3": 1.5798037810489904,
+        "B4": 3.510071504415657,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 19,
+        "reward": 0.6304713551774913,
+        "B1": 49.311793729781115,
+        "B3": 1.6025330327159784,
+        "B4": 3.592854728841102,
+        "feasible": true,
+        "thickness_cm": null
+      }
+    ]
+  },
+  {
+    "case_id": "sg_very_stiff",
+    "category": "subgrade",
+    "pavement_type": "semi_rigid",
+    "mode": "surrogate_only",
+    "seed": 0,
+    "n_steps": 20,
+    "total_reward": 9.5223,
+    "mean_reward": 0.4761,
+    "min_reward": -1.5,
+    "final_dsr": 1.0,
+    "final_scr": 1.0,
+    "scr_trajectory": 1.0,
+    "B1": 8.77,
+    "B2": 9.138,
+    "B3": 1.326,
+    "B4": 7.396,
+    "final_h1_cm": 2.0,
+    "final_h2_cm": 14.7,
+    "final_h3_cm": 7.0,
+    "final_h4_cm": 44.4,
+    "final_h5_cm": 16.2,
+    "n_guard_violations": 0,
+    "n_fea_escalations": 0,
+    "escalation_rate": 0.0,
+    "n_surrogate_calls": 0,
+    "mean_gen_confidence": null,
+    "mean_evaluator_score": null,
+    "NPV_usd": 72.97,
+    "C_const_cny": 431.5,
+    "wall_clock_sec": 86.9,
+    "status": "ok",
+    "trajectory": [
+      {
+        "step": 0,
+        "reward": 0.6049866691665863,
+        "B1": 12.829689988504958,
+        "B3": 1.3979599043524706,
+        "B4": 7.331320945416031,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 1,
+        "reward": 0.6136060234543244,
+        "B1": 10.476620884673409,
+        "B3": 1.3382924834529444,
+        "B4": 7.123614354562557,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 2,
+        "reward": 0.6159239404775623,
+        "B1": 10.558334970764689,
+        "B3": 1.3175094037571504,
+        "B4": 7.074516833913203,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 3,
+        "reward": 0.6114265181316453,
+        "B1": 10.616229756652862,
+        "B3": 1.2990122840460088,
+        "B4": 7.028480514559578,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 4,
+        "reward": 0.606839134102807,
+        "B1": 10.648779648532344,
+        "B3": 1.2830366814385232,
+        "B4": 6.986645453592795,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 5,
+        "reward": 0.6021662226843296,
+        "B1": 10.654778560838169,
+        "B3": 1.2697786232507198,
+        "B4": 6.9501702973073884,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 6,
+        "reward": 0.5974115304162039,
+        "B1": 10.633632779568645,
+        "B3": 1.2593822483674109,
+        "B4": 6.920183929396106,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 7,
+        "reward": 0.592578823862279,
+        "B1": 10.585441340374093,
+        "B3": 1.2519519402980495,
+        "B4": 6.897775023794926,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 8,
+        "reward": 0.587671881129846,
+        "B1": 10.510929569127281,
+        "B3": 1.2475609206708052,
+        "B4": 6.883971190949131,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 9,
+        "reward": 0.5826944538055803,
+        "B1": 10.411490399427207,
+        "B3": 1.2462600746127594,
+        "B4": 6.879731680227932,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 10,
+        "reward": 0.5773494335332003,
+        "B1": 31.32406216697906,
+        "B3": 1.5245230193246067,
+        "B4": 6.908069156387431,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 11,
+        "reward": 0.572025367728868,
+        "B1": 10.108594846739376,
+        "B3": 1.2461960688814389,
+        "B4": 6.900476878047711,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 12,
+        "reward": 0.5669879654430797,
+        "B1": 9.946476625644129,
+        "B3": 1.2492658404249946,
+        "B4": 6.931073900950541,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 13,
+        "reward": 0.5617708129699677,
+        "B1": 9.770038742762953,
+        "B3": 1.2551246255037354,
+        "B4": 6.974049105093323,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 14,
+        "reward": 0.5564986681621276,
+        "B1": 9.581938786511717,
+        "B3": 1.263758799587551,
+        "B4": 7.030190347283339,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 15,
+        "reward": 0.5511770475376607,
+        "B1": 9.385101637762613,
+        "B3": 1.2751617727111735,
+        "B4": 7.099999359511158,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 16,
+        "reward": 0.5458085034537015,
+        "B1": 9.182385641479547,
+        "B3": 1.2893283765999386,
+        "B4": 7.183922774834322,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 17,
+        "reward": 0.5403952310295538,
+        "B1": 8.976459339645741,
+        "B3": 1.3062580416462266,
+        "B4": 7.282374441154039,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 18,
+        "reward": 0.5349391462713672,
+        "B1": 8.769797315324805,
+        "B3": 1.3259547978933175,
+        "B4": 7.39574759918071,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 19,
+        "reward": -1.5,
+        "B1": 8.769797315324805,
+        "B3": 1.3259547978933175,
+        "B4": 7.39574759918071,
+        "feasible": true,
+        "thickness_cm": null
+      }
+    ]
+  },
+  {
+    "case_id": "sg_ltpp_48_0001",
+    "category": "subgrade",
+    "pavement_type": "flexible",
+    "mode": "surrogate_only",
+    "seed": 0,
+    "n_steps": 20,
+    "total_reward": -2.3772,
+    "mean_reward": -0.1189,
+    "min_reward": -1.5,
+    "final_dsr": 1.0,
+    "final_scr": 0.0952,
+    "scr_trajectory": 0.05,
+    "B1": 1.426,
+    "B2": 0,
+    "B3": 0.813,
+    "B4": 5.149,
+    "final_h1_cm": 2.0,
+    "final_h2_cm": 10.4,
+    "final_h3_cm": 11.9,
+    "final_h4_cm": 29.4,
+    "final_h5_cm": 30.4,
+    "n_guard_violations": 0,
+    "n_fea_escalations": 0,
+    "escalation_rate": 0.0,
+    "n_surrogate_calls": 0,
+    "mean_gen_confidence": null,
+    "mean_evaluator_score": null,
+    "NPV_usd": 76.59,
+    "C_const_cny": 311.4,
+    "wall_clock_sec": 69.5,
+    "status": "ok",
+    "trajectory": [
+      {
+        "step": 0,
+        "reward": -0.0627776362755819,
+        "B1": 0.9833962755699487,
+        "B3": 0.9653962860714491,
+        "B4": 3.9702500305461874,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 1,
+        "reward": 0.07182929566311985,
+        "B1": 1.0306464556181525,
+        "B3": 0.9463275421120059,
+        "B4": 3.9932158312128756,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 2,
+        "reward": 0.07417522466602222,
+        "B1": 1.0857090178465167,
+        "B3": 0.9285431853811646,
+        "B4": 4.053459376791654,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 3,
+        "reward": 0.07255277744425653,
+        "B1": 1.1358944341948258,
+        "B3": 0.9133715266870664,
+        "B4": 4.116907496169694,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 4,
+        "reward": 0.12428996242869572,
+        "B1": 1.1810930105767306,
+        "B3": 0.90048781586449,
+        "B4": 4.18363119022443,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 5,
+        "reward": 0.1215792984350926,
+        "B1": 1.2213255832079781,
+        "B3": 0.8896077128927677,
+        "B4": 4.253679692827587,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 6,
+        "reward": 0.11905680173335209,
+        "B1": 1.256768769112788,
+        "B3": 0.8804821722453147,
+        "B4": 4.327125462322053,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 7,
+        "reward": 0.11646774795372339,
+        "B1": 1.2877203782086526,
+        "B3": 0.8713735538723533,
+        "B4": 4.404058861330558,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 8,
+        "reward": 0.11361889600097666,
+        "B1": 1.3145567264959321,
+        "B3": 0.8609599893801986,
+        "B4": 4.484525947906147,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 9,
+        "reward": 0.11085800226035106,
+        "B1": 1.3377336172604464,
+        "B3": 0.8516024448826979,
+        "B4": 4.568522411326808,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 10,
+        "reward": 0.7192563642765243,
+        "B1": 5.312631377428192,
+        "B3": 1.0800511159687394,
+        "B4": 2.526786532666248,
+        "feasible": true,
+        "thickness_cm": null
+      },
+      {
+        "step": 11,
+        "reward": 0.0974315415824433,
+        "B1": 1.3503934205083044,
+        "B3": 0.8446360847438791,
+        "B4": 4.650547739894673,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 12,
+        "reward": 0.1055976693521666,
+        "B1": 1.3689700312251616,
+        "B3": 0.8365038612142475,
+        "B4": 4.745475693402618,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 13,
+        "reward": 0.10298479770818053,
+        "B1": 1.384729436793451,
+        "B3": 0.8295076614190451,
+        "B4": 4.840764774291104,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 14,
+        "reward": 0.10039026278767511,
+        "B1": 1.399100303208167,
+        "B3": 0.8232419421944482,
+        "B4": 4.939667084509044,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 15,
+        "reward": 0.06815286531889436,
+        "B1": 1.4127115663709442,
+        "B3": 0.8176332026630097,
+        "B4": 5.042414054453823,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 16,
+        "reward": 0.06735528883852895,
+        "B1": 1.4261288961779348,
+        "B3": 0.8126321152891599,
+        "B4": 5.149037324521742,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 17,
+        "reward": -1.5,
+        "B1": 1.4261288961779348,
+        "B3": 0.8126321152891599,
+        "B4": 5.149037324521742,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 18,
+        "reward": -1.5,
+        "B1": 1.4261288961779348,
+        "B3": 0.8126321152891599,
+        "B4": 5.149037324521742,
+        "feasible": false,
+        "thickness_cm": null
+      },
+      {
+        "step": 19,
+        "reward": -1.5,
+        "B1": 1.4261288961779348,
+        "B3": 0.8126321152891599,
+        "B4": 5.149037324521742,
+        "feasible": false,
+        "thickness_cm": null
+      }
+    ]
+  }
+]

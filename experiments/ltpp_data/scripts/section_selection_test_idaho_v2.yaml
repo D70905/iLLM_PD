@@ -1,0 +1,74 @@
+# LTPP 12 段选择配置文件 — 测试版 v2（仅 Idaho）
+# ============================================================
+# v2 更新：
+#   - mon_profile_iri 改用 ANALYSIS_IRI（SDR 39 实际表名）
+#   - clm_temp / clm_precip 加 query_mode: via_vws_link，通过 CLM_SITE_VWS_LINK JOIN
+# ============================================================
+
+# SDR 文件路径
+sdr:
+  states_dir: "D:/iLLM_PD_new/experiments/ltpp_data/sdr39/states"
+  output_dir: "D:/iLLM_PD_new/experiments/ltpp_data/sdr39/extracted"
+  sdr_version: "SDR39_2025_09"
+
+# 输出
+output:
+  master_xlsx: "D:/iLLM_PD_new/experiments/ltpp_data/ltpp_12_sections.xlsx"
+
+# ============================================================
+# 选段清单（测试模式：仅 Idaho 一段）
+# ============================================================
+sections:
+  - section_id: "16_9032"
+    state_code: "16"
+    shrp_id: "9032"
+    state_name: "Idaho"
+    climate_zone: "Wet-Freeze"
+    expected_subgrade_bin: "Soft"
+    addresses_reviewer_comments: "Test extraction segment (Idaho, GPS-1, WF, age 15)"
+    is_baseline: false
+
+# ============================================================
+# 提取的字段（脚本会从这些表抽取）
+# query_mode 选项:
+#   - direct (默认): WHERE STATE_CODE=? AND SHRP_ID=?
+#   - via_vws_link: 通过 CLM_SITE_VWS_LINK JOIN VWS_ID
+# ============================================================
+tables_to_extract:
+  inv_layer:
+    sdr_table: "INV_LAYER"
+    query_mode: "direct"
+  tst_ac01:
+    sdr_table: "TST_AC01"
+    query_mode: "direct"
+  mon_defl_drop_data:
+    sdr_table: "MON_DEFL_DROP_DATA"
+    query_mode: "direct"
+  mon_profile_iri:
+    sdr_table: "ANALYSIS_IRI"          # ← SDR 39 实际表名
+    query_mode: "direct"
+  trf_esal:
+    sdr_table: "TRF_ESAL_COMPUTED"
+    query_mode: "direct"
+  clm_temp:
+    sdr_table: "CLM_VWS_TEMP_ANNUAL"
+    query_mode: "via_vws_link"         # ← 必须通过 VWS_LINK JOIN
+  clm_precip:
+    sdr_table: "CLM_VWS_PRECIP_ANNUAL"
+    query_mode: "via_vws_link"         # ← 同上
+  experiment_section:
+    sdr_table: "EXPERIMENT_SECTION"
+    query_mode: "direct"
+
+# ============================================================
+# 数据质检阈值
+# ============================================================
+quality_checks:
+  iri_min_n_years: 10
+  iri_min_n_timepoints: 5
+  construction_date_min: "2000-01-01"
+  construction_date_max: "2018-12-31"
+  fwd_min_n_tests: 3
+  subgrade_bin_boundaries:
+    soft_max: 50
+    medium_max: 100

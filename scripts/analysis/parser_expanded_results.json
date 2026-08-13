@@ -1,0 +1,622 @@
+[
+  {
+    "id": "flex_word_1",
+    "brief": "一条在东北寒冷地区的高速公路，特重交通，沥青路面加粒料基层，地基大约80MPa",
+    "city": "shenyang",
+    "road_class": "highway_1",
+    "traffic_level": "extra_heavy",
+    "pavement_type": "flexible",
+    "E_subgrade": 80.0,
+    "confidence": 1.0,
+    "elapsed_s": 11.3,
+    "checks": {
+      "city": {
+        "predicted": "shenyang",
+        "ground_truth": "harbin",
+        "match": false
+      },
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "flex_word_2",
+    "brief": "南方湿热地区城市主干道，中等交通量，半刚性基层，软基约60MPa",
+    "city": "guangzhou",
+    "road_class": "urban_trunk",
+    "traffic_level": "medium",
+    "pavement_type": "semi_rigid",
+    "E_subgrade": 60.0,
+    "confidence": 1.0,
+    "elapsed_s": 6.5,
+    "checks": {
+      "city": {
+        "predicted": "guangzhou",
+        "ground_truth": "guangzhou",
+        "match": true
+      },
+      "pavement_type": {
+        "predicted": "semi_rigid",
+        "ground_truth": "semi_rigid",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "flex_word_3",
+    "brief": "Build an expressway in a cold region with heavy trucks, flexible pavement, subgrade around 100 MPa",
+    "city": "harbin",
+    "road_class": "expressway",
+    "traffic_level": "heavy",
+    "pavement_type": "flexible",
+    "E_subgrade": 100.0,
+    "confidence": 1.0,
+    "elapsed_s": 10.6,
+    "checks": {
+      "city": {
+        "predicted": "harbin",
+        "ground_truth": "harbin",
+        "match": true
+      },
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "flex_word_4",
+    "brief": "西北干旱区一级公路，轻交通，柔性路面，Esub大约120MPa，设计使用15年",
+    "city": "xian",
+    "road_class": "highway_1",
+    "traffic_level": "light",
+    "pavement_type": "flexible",
+    "E_subgrade": 120.0,
+    "confidence": 1.0,
+    "elapsed_s": 7.0,
+    "checks": {
+      "city": {
+        "predicted": "xian",
+        "ground_truth": "urumqi",
+        "match": false
+      },
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "flex_word_5",
+    "brief": "Design a semi-rigid pavement for a medium-traffic highway in central China, subgrade ~90 MPa",
+    "city": "wuhan",
+    "road_class": "highway_2",
+    "traffic_level": "medium",
+    "pavement_type": "semi_rigid",
+    "E_subgrade": 90.0,
+    "confidence": 0.9,
+    "elapsed_s": 6.9,
+    "checks": {
+      "city": {
+        "predicted": "wuhan",
+        "ground_truth": "wuhan",
+        "match": true
+      },
+      "pavement_type": {
+        "predicted": "semi_rigid",
+        "ground_truth": "semi_rigid",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "flex_word_6",
+    "brief": "重庆山区二级公路，重交通，半刚性路面，Esub约200MPa（岩石地基）",
+    "city": "chongqing",
+    "road_class": "highway_2",
+    "traffic_level": "heavy",
+    "pavement_type": "semi_rigid",
+    "E_subgrade": 200.0,
+    "confidence": 1.0,
+    "elapsed_s": 9.9,
+    "checks": {
+      "city": {
+        "predicted": "chongqing",
+        "ground_truth": "chongqing",
+        "match": true
+      },
+      "pavement_type": {
+        "predicted": "semi_rigid",
+        "ground_truth": "semi_rigid",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "flex_word_7",
+    "brief": "东部沿海平原高速公路，特重交通，柔性路面，软土路基Esub=40MPa",
+    "city": "shanghai",
+    "road_class": "expressway",
+    "traffic_level": "extra_heavy",
+    "pavement_type": "flexible",
+    "E_subgrade": 40.0,
+    "confidence": 1.0,
+    "elapsed_s": 9.1,
+    "checks": {
+      "city": {
+        "predicted": "shanghai",
+        "ground_truth": "shanghai",
+        "match": true
+      },
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "no_city_1",
+    "brief": "Expressway in a cold northern region with permafrost concerns, heavy traffic, flexible pavement, subgrade 120 MPa",
+    "city": "harbin",
+    "road_class": "expressway",
+    "traffic_level": "heavy",
+    "pavement_type": "flexible",
+    "E_subgrade": 120.0,
+    "confidence": 1.0,
+    "elapsed_s": 7.0,
+    "checks": {
+      "city": {
+        "predicted": "harbin",
+        "ground_truth": "harbin",
+        "match": true
+      },
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "no_city_2",
+    "brief": "Urban arterial in a hot humid southern climate, medium traffic, semi-rigid base, soft subgrade ~50 MPa",
+    "city": "guangzhou",
+    "road_class": "urban_trunk",
+    "traffic_level": "medium",
+    "pavement_type": "semi_rigid",
+    "E_subgrade": 50.0,
+    "confidence": 0.9,
+    "elapsed_s": 6.1,
+    "checks": {
+      "city": {
+        "predicted": "guangzhou",
+        "ground_truth": "guangzhou",
+        "match": true
+      },
+      "pavement_type": {
+        "predicted": "semi_rigid",
+        "ground_truth": "semi_rigid",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "no_city_3",
+    "brief": "Highway in a high-altitude region with extreme temperature swings, light traffic, flexible, Esub=200 MPa",
+    "city": "lhasa",
+    "road_class": "highway_1",
+    "traffic_level": "light",
+    "pavement_type": "flexible",
+    "E_subgrade": 200.0,
+    "confidence": 0.9,
+    "elapsed_s": 7.0,
+    "checks": {
+      "city": {
+        "predicted": "lhasa",
+        "ground_truth": "lhasa",
+        "match": true
+      },
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "no_city_4",
+    "brief": "Coastal highway with typhoon exposure, heavy traffic, semi-rigid, subgrade ~70 MPa",
+    "city": "guangzhou",
+    "road_class": "highway_1",
+    "traffic_level": "heavy",
+    "pavement_type": "semi_rigid",
+    "E_subgrade": 70.0,
+    "confidence": 0.9,
+    "elapsed_s": 9.5,
+    "checks": {
+      "city": {
+        "predicted": "guangzhou",
+        "ground_truth": "fuzhou",
+        "match": false
+      },
+      "pavement_type": {
+        "predicted": "semi_rigid",
+        "ground_truth": "semi_rigid",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "partial_1",
+    "brief": "城市主干道，沥青路面。地基条件一般。",
+    "city": "beijing",
+    "road_class": "urban_trunk",
+    "traffic_level": "heavy",
+    "pavement_type": "flexible",
+    "E_subgrade": 80.0,
+    "confidence": 0.9,
+    "elapsed_s": 7.0,
+    "checks": {
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "partial_2",
+    "brief": "Heavy traffic highway. Semi-rigid base. That's all I know.",
+    "city": "beijing",
+    "road_class": "highway_1",
+    "traffic_level": "heavy",
+    "pavement_type": "semi_rigid",
+    "E_subgrade": 150.0,
+    "confidence": 0.9,
+    "elapsed_s": 7.3,
+    "checks": {
+      "pavement_type": {
+        "predicted": "semi_rigid",
+        "ground_truth": "semi_rigid",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "partial_3",
+    "brief": "一条路，在北方，交通量比较大，其他信息暂时没有。",
+    "city": "beijing",
+    "road_class": "expressway",
+    "traffic_level": "heavy",
+    "pavement_type": "flexible",
+    "E_subgrade": 150.0,
+    "confidence": 0.8,
+    "elapsed_s": 6.0,
+    "checks": {
+      "city": {
+        "predicted": "beijing",
+        "ground_truth": "beijing",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "partial_4",
+    "brief": "Rural road, very light traffic, flexible, local gravel subgrade",
+    "city": "beijing",
+    "road_class": "expressway",
+    "traffic_level": "light",
+    "pavement_type": "flexible",
+    "E_subgrade": 40.0,
+    "confidence": 0.9,
+    "elapsed_s": 6.4,
+    "checks": {
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "partial_5",
+    "brief": "Expressway near a major port city. Container truck traffic (very heavy).",
+    "city": "shanghai",
+    "road_class": "expressway",
+    "traffic_level": "extra_heavy",
+    "pavement_type": "semi_rigid",
+    "E_subgrade": 150.0,
+    "confidence": 0.9,
+    "elapsed_s": 6.5,
+    "checks": {
+      "city": {
+        "predicted": "shanghai",
+        "ground_truth": "shanghai",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "edge_1",
+    "brief": "Design for 50-year life. Climate zone 6. Full-depth asphalt on stabilized subgrade 300MPa.",
+    "city": "beijing",
+    "road_class": "expressway",
+    "traffic_level": "heavy",
+    "pavement_type": "flexible",
+    "E_subgrade": 300.0,
+    "confidence": 0.9,
+    "elapsed_s": 6.2,
+    "checks": {
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "edge_2",
+    "brief": "Temporary construction access road, 2 year design life, flexible, any subgrade, minimum cost",
+    "city": "beijing",
+    "road_class": "expressway",
+    "traffic_level": "heavy",
+    "pavement_type": "flexible",
+    "E_subgrade": 20.0,
+    "confidence": 0.9,
+    "elapsed_s": 5.9,
+    "checks": {
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "edge_3",
+    "brief": "Airport taxiway pavement. Heavy aircraft loading. Semi-rigid base over treated subgrade 150MPa.",
+    "city": "beijing",
+    "road_class": "expressway",
+    "traffic_level": "heavy",
+    "pavement_type": "semi_rigid",
+    "E_subgrade": 150.0,
+    "confidence": 1.0,
+    "elapsed_s": 6.4,
+    "checks": {
+      "pavement_type": {
+        "predicted": "semi_rigid",
+        "ground_truth": "semi_rigid",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "edge_4",
+    "brief": "Renovate an existing highway. Mill 5cm and overlay. Current structure: 15cm AC + 30cm granular base + semi-infinite subgrade ~80MPa.",
+    "city": "beijing",
+    "road_class": "highway_1",
+    "traffic_level": "heavy",
+    "pavement_type": "flexible",
+    "E_subgrade": 80.0,
+    "confidence": 0.9,
+    "elapsed_s": 6.6,
+    "checks": {
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "edge_5",
+    "brief": "Build a parking lot for heavy trucks. Asphalt surface over aggregate base. Subgrade is compacted fill ~60MPa.",
+    "city": "beijing",
+    "road_class": "expressway",
+    "traffic_level": "heavy",
+    "pavement_type": "flexible",
+    "E_subgrade": 60.0,
+    "confidence": 1.0,
+    "elapsed_s": 6.2,
+    "checks": {
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "edge_6",
+    "brief": "Pavement for a bus rapid transit (BRT) lane. Frequent stops, channelised loading, 1000 buses/day.",
+    "city": "beijing",
+    "road_class": "urban_trunk",
+    "traffic_level": "extra_heavy",
+    "pavement_type": "semi_rigid",
+    "E_subgrade": 150.0,
+    "confidence": 0.9,
+    "elapsed_s": 6.5,
+    "checks": {
+      "pavement_type": {
+        "predicted": "semi_rigid",
+        "ground_truth": "semi_rigid",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "real_1",
+    "brief": "项目位于华北平原，设计为双向六车道高速公路，设计年限20年，累计当量轴次约2.5×10^7次。初步钻探显示路基为粉质粘土，回弹模量约70MPa。拟采用半刚性基层沥青路面。",
+    "city": "beijing",
+    "road_class": "highway_1",
+    "traffic_level": "heavy",
+    "pavement_type": "semi_rigid",
+    "E_subgrade": 70.0,
+    "confidence": 0.9,
+    "elapsed_s": 6.0,
+    "checks": {
+      "city": {
+        "predicted": "beijing",
+        "ground_truth": "beijing",
+        "match": true
+      },
+      "pavement_type": {
+        "predicted": "semi_rigid",
+        "ground_truth": "semi_rigid",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "real_2",
+    "brief": "Southern China, 4-lane expressway, 15-yr design, ~15M ESAL. Silty-clay subgrade. Consider both flexible (granular base) and semi-rigid (CTB) options.",
+    "city": "guangzhou",
+    "road_class": "expressway",
+    "traffic_level": "heavy",
+    "pavement_type": "semi_rigid",
+    "E_subgrade": 60.0,
+    "confidence": 0.9,
+    "elapsed_s": 6.3,
+    "checks": {
+      "city": {
+        "predicted": "guangzhou",
+        "ground_truth": "guangzhou",
+        "match": true
+      },
+      "pavement_type": {
+        "predicted": "semi_rigid",
+        "ground_truth": "flexible",
+        "match": false
+      }
+    }
+  },
+  {
+    "id": "real_3",
+    "brief": "西北某省会城市外环路，一级公路标准，设计车速80km/h。路面结构拟采用4cm AC-13 + 6cm AC-20 + 8cm AC-25 + 20cm水泥稳定碎石基层 + 20cm级配碎石底基层。路基为黄土，Esub=50MPa。",
+    "city": "xian",
+    "road_class": "highway_1",
+    "traffic_level": "heavy",
+    "pavement_type": "semi_rigid",
+    "E_subgrade": 50.0,
+    "confidence": 1.0,
+    "elapsed_s": 6.6,
+    "checks": {
+      "city": {
+        "predicted": "xian",
+        "ground_truth": "xian",
+        "match": true
+      },
+      "pavement_type": {
+        "predicted": "semi_rigid",
+        "ground_truth": "semi_rigid",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "real_4",
+    "brief": "Industrial park internal road. Occasional heavy trucks (5%). Mostly passenger cars. Design for 10 years. Local practice is flexible pavement. Subgrade CBR=5 (~50MPa).",
+    "city": "beijing",
+    "road_class": "expressway",
+    "traffic_level": "heavy",
+    "pavement_type": "flexible",
+    "E_subgrade": 50.0,
+    "confidence": 0.9,
+    "elapsed_s": 6.3,
+    "checks": {
+      "city": {
+        "predicted": "beijing",
+        "ground_truth": "nanjing",
+        "match": false
+      },
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "real_5",
+    "brief": "川西高原国道改建项目，海拔3500m，年均气温5°C，极端低温-25°C。设计年限15年，交通量为中等（约5000 AADT，15%货车）。路基为碎石土，Esub约120MPa。",
+    "city": "chengdu",
+    "road_class": "highway_1",
+    "traffic_level": "medium",
+    "pavement_type": "flexible",
+    "E_subgrade": 120.0,
+    "confidence": 1.0,
+    "elapsed_s": 6.2,
+    "checks": {
+      "city": {
+        "predicted": "chengdu",
+        "ground_truth": "chengdu",
+        "match": true
+      },
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "ambig_1",
+    "brief": "Grade-separated interchange on a major highway. Design the approach pavement.",
+    "city": "beijing",
+    "road_class": "highway_1",
+    "traffic_level": "heavy",
+    "pavement_type": "flexible",
+    "E_subgrade": 80.0,
+    "confidence": 0.8,
+    "elapsed_s": 6.1,
+    "checks": {
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "ambig_2",
+    "brief": "Pavement renewal project. Existing road has severe rutting and fatigue cracking after 8 years. Fix it.",
+    "city": "beijing",
+    "road_class": "expressway",
+    "traffic_level": "heavy",
+    "pavement_type": "flexible",
+    "E_subgrade": 80.0,
+    "confidence": 0.8,
+    "elapsed_s": 6.5,
+    "checks": {
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  },
+  {
+    "id": "ambig_3",
+    "brief": "Low-volume road in a developing region. Budget is very limited. Use locally available materials.",
+    "city": "nanjing",
+    "road_class": "expressway",
+    "traffic_level": "heavy",
+    "pavement_type": "flexible",
+    "E_subgrade": 40.0,
+    "confidence": 0.7,
+    "elapsed_s": 6.5,
+    "checks": {
+      "pavement_type": {
+        "predicted": "flexible",
+        "ground_truth": "flexible",
+        "match": true
+      }
+    }
+  }
+]

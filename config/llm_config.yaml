@@ -1,0 +1,51 @@
+# iLLM-PD HARA - LLM Configuration (Phase 2B + 2C)
+# ====================================================
+# Models are looked up via .env (DEEPSEEK_MODEL, CHATFIRE_MODEL).
+# This file controls call behavior, not credentials.
+
+evaluator:
+  enabled: true
+  backend: deepseek         # DeepSeek for independent audit
+  temperature: 0.2          # low temp for consistent judgement
+  max_tokens: 300
+  timeout_s: 15.0
+  max_workers: 2            # async pool size
+  fail_fast: false          # production: false; debug: true
+
+generator:
+  enabled: true
+  backend: chatfire         # ChatFire-proxied GPT for action proposal
+  temperature: 0.5
+  max_tokens: 500
+  timeout_s: 25.0
+  fail_fast: false
+
+  # Blending weight (alpha) schedule
+  alpha_initial: 0.50              # at tau=0.0
+  alpha_decay: linear_to_zero      # 'linear_to_zero' | 'cosine' | 'constant'
+  alpha_min:   0.00                # minimum at tau=1.0
+  alpha_fallback_infeasible: 0.80  # override when last step infeasible
+
+  # Call frequency schedule (avoid over-calling LLM)
+  early_tau_threshold: 0.30   # tau < this → early phase
+  mid_tau_threshold:   0.70   # tau between → mid phase
+  early_interval: 1           # early: every step
+  mid_interval:   2           # mid:   every 2 steps
+  late_interval:  5           # late:  every 5 steps
+
+rag:
+  enabled: true
+  persist_dir: ./output/rag_db
+  embedding_model: BAAI/bge-large-zh-v1.5
+  collection_name: pavement_specs
+  top_k: 3
+
+  # PDFs to ingest (paths relative to project root)
+  # Update these after collecting documents:
+  pdf_paths:
+    - ./docs/regulations/JTG_D50_2017.pdf
+    - ./docs/regulations/NCHRP_1-37A_Implementation_Guide.pdf
+
+audit:
+  enabled: true
+  path: ./output/audit/audit_chain.jsonl

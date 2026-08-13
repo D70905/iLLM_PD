@@ -1,0 +1,21 @@
+mode,brief_id,elapsed_s,valid,field_accuracy,city,road_class,traffic_level,pavement_type,E_subgrade,source,note
+structured_form_bypass,full_chinese_1,5.49999822396785e-06,True,1.0,harbin,highway_1,heavy,flexible,78.0,ground_truth_form,Structured engineering inputs bypass free-text LLM parsing.
+keyword_schema_parser,full_chinese_1,0.00029799999902024865,True,0.6,beijing,expressway,heavy,flexible,60.0,deterministic_keywords,Fast schema parser for standard English/tokenized briefs.
+cached_structured_parse,full_chinese_1,2.00001522898674e-07,True,1.0,harbin,highway_1,heavy,flexible,78.0,sha256_brief_cache,Simulated cache hit for repeated standard briefs.
+structured_form_bypass,full_english_1,2.1000014385208488e-06,True,1.0,guangzhou,expressway,heavy,flexible,700.0,ground_truth_form,Structured engineering inputs bypass free-text LLM parsing.
+keyword_schema_parser,full_english_1,1.920000067912042e-05,True,1.0,guangzhou,expressway,heavy,flexible,700.0,deterministic_keywords,Fast schema parser for standard English/tokenized briefs.
+cached_structured_parse,full_english_1,2.00001522898674e-07,True,1.0,guangzhou,expressway,heavy,flexible,700.0,sha256_brief_cache,Simulated cache hit for repeated standard briefs.
+structured_form_bypass,full_chinese_2,1.200009137392044e-06,True,1.0,nanjing,expressway,heavy,semi_rigid,59.0,ground_truth_form,Structured engineering inputs bypass free-text LLM parsing.
+keyword_schema_parser,full_chinese_2,1.069999416358769e-05,True,0.6,beijing,expressway,heavy,flexible,60.0,deterministic_keywords,Fast schema parser for standard English/tokenized briefs.
+cached_structured_parse,full_chinese_2,2.00001522898674e-07,True,1.0,nanjing,expressway,heavy,semi_rigid,59.0,sha256_brief_cache,Simulated cache hit for repeated standard briefs.
+llm_parser_historical,full_chinese_1,8.516907930374146,True,1.0,harbin,highway_1,heavy,flexible,80.0,scripts\analysis\nl_parser_results.json,Existing GPT-parser run; no new API call in default benchmark.
+llm_parser_historical,full_english_1,6.875784873962402,True,1.0,guangzhou,expressway,heavy,flexible,700.0,scripts\analysis\nl_parser_results.json,Existing GPT-parser run; no new API call in default benchmark.
+llm_parser_historical,full_chinese_2,7.3723626136779785,True,0.8,nanjing,highway_1,heavy,semi_rigid,60.0,scripts\analysis\nl_parser_results.json,Existing GPT-parser run; no new API call in default benchmark.
+llm_parser_historical,partial_no_traffic,7.519225358963013,True,1.0,changsha,urban_trunk,,flexible,100.0,scripts\analysis\nl_parser_results.json,Existing GPT-parser run; no new API call in default benchmark.
+llm_parser_historical,partial_no_subgrade,7.134975433349609,True,0.75,wuhan,highway_1,extra_heavy,semi_rigid,nan,scripts\analysis\nl_parser_results.json,Existing GPT-parser run; no new API call in default benchmark.
+llm_parser_historical,partial_vague_soil,6.49984335899353,True,1.0,shenyang,highway_2,medium,flexible,nan,scripts\analysis\nl_parser_results.json,Existing GPT-parser run; no new API call in default benchmark.
+llm_parser_historical,ambig_city_not_in_list,7.339890956878662,True,0.8,harbin,highway_1,heavy,flexible,150.0,scripts\analysis\nl_parser_results.json,Existing GPT-parser run; no new API call in default benchmark.
+llm_parser_historical,ambig_typo_city,6.569385290145874,True,0.8,shanghai,highway_1,heavy,flexible,120.0,scripts\analysis\nl_parser_results.json,Existing GPT-parser run; no new API call in default benchmark.
+llm_parser_live_chatfire,full_chinese_1,18.476784706115723,True,1.0,harbin,highway_1,heavy,flexible,80.0,gpt-4o-mini,Fresh LLM parser call.
+llm_parser_live_chatfire,full_english_1,2.1319921016693115,True,1.0,guangzhou,expressway,heavy,flexible,700.0,gpt-4o-mini,Fresh LLM parser call.
+llm_parser_live_chatfire,full_chinese_2,2.3382840156555176,True,0.8,nanjing,highway_1,heavy,semi_rigid,60.0,gpt-4o-mini,Fresh LLM parser call.

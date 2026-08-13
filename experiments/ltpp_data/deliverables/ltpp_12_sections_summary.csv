@@ -1,0 +1,13 @@
+﻿section_id,state,gps_family,climate_zone,E_subgrade_MPa,subgrade_bin,is_baseline,base_material,iri_n_timepoints,iri_years
+48_0001,Texas,GPS-1,WNF,700,Stiff,yes,Crushed Stone,60,17.0
+48_1076,Texas,GPS-1,DNF,115,Stiff,yes,Crushed Stone,55,22.3
+16_1010,Idaho,GPS-1,DF,78,Medium,no,Crushed Stone,85,7.9
+27_1085,Minnesota,GPS-1,WF,86,Medium,no,Granular,35,8.3
+04_1034,Arizona,GPS-1,DNF,91,Medium,no,Crushed Stone,65,14.0
+12_1060,Florida,GPS-1,WNF,286,Stiff,no,Lime-treated,30,12.3
+04_1065,Arizona,GPS-2,DNF,91,Medium,no,Cement-treated,90,27.0
+12_4097,Florida,GPS-2,WNF,286,Stiff,no,Pozzolanic,35,13.9
+30_7076,Montana,GPS-2,DF,59,Medium,no,Lime-treated,114,26.9
+27_2023,Minnesota,GPS-2,WF,131,Stiff,no,Cement-treated,30,10.1
+48_1109,Texas,GPS-2,WNF,100,Medium,no,Cement-treated,35,11.1
+06_2004,California,GPS-2,DNF,113,Stiff,no,Asphalt-treated,20,3.1

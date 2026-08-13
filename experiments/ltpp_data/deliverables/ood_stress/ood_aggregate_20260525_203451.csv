@@ -1,0 +1,4 @@
+case_id,category,pavement_type,mode,n,mean_reward_mean,mean_reward_std,final_dsr_mean,final_scr_mean,scr_traj_mean,B1_mean,B1_min,B3_mean,B3_min,B4_mean,B4_min,escalation_rate_mean,guard_violations_total,wall_clock_total
+sg_ltpp_48_0001,subgrade,flexible,surrogate_only,1,-0.119,,1.0,0.095,0.05,1.426,1.426,0.813,0.813,5.149,5.149,0.0,0,69.5
+sg_very_soft,subgrade,semi_rigid,surrogate_only,1,0.687,,1.0,1.0,1.0,49.312,49.312,1.603,1.603,3.593,3.593,0.0,0,77.2
+sg_very_stiff,subgrade,semi_rigid,surrogate_only,1,0.476,,1.0,1.0,1.0,8.77,8.77,1.326,1.326,7.396,7.396,0.0,0,86.9

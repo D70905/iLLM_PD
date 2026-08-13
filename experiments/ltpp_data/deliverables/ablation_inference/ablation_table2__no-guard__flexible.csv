@@ -1,0 +1,2 @@
+variant,base_type,DSR_mean,DSR_sd,SCR_mean,SCR_sd,cost_mean,cost_sd,n
+no-guard,flexible,1.0,0.0,0.648,0.308,41.6,0.7,18

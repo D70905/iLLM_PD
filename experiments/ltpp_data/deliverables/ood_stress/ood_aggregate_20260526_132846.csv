@@ -1,0 +1,5 @@
+case_id,category,pavement_type,mode,n,mean_reward,final_dsr,final_scr,scr_traj,B3_min,escalation_rate,guards_total
+mat_soft_base,material,flexible,surrogate_only,3,-1.5,1.0,1.0,1.0,1.108,0.0,0
+sg_ltpp_48_0001,subgrade,flexible,surrogate_only,3,-0.119,1.0,0.667,0.05,0.813,0.0,0
+sg_very_soft,subgrade,semi_rigid,surrogate_only,3,0.687,1.0,1.0,1.0,1.603,0.0,0
+sg_very_stiff,subgrade,semi_rigid,surrogate_only,3,0.476,1.0,1.0,1.0,1.326,0.0,0

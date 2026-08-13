@@ -1,0 +1,4 @@
+case_id,category,pavement_type,mode,seed,n_steps,total_reward,mean_reward,min_reward,final_dsr,final_scr,scr_trajectory,B1,B2,B3,B4,final_h1_cm,final_h2_cm,final_h3_cm,final_h4_cm,final_h5_cm,n_guard_violations,n_fea_escalations,escalation_rate,n_surrogate_calls,mean_gen_confidence,mean_evaluator_score,NPV_usd,C_const_cny,wall_clock_sec,status
+sg_very_soft,subgrade,semi_rigid,surrogate_only,0,20,13.7314,0.6866,0.6305,1.0,1.0,1.0,49.312,3.673,1.603,3.593,2.0,14.9,6.7,44.5,16.3,0,0,0.0,0,,,73.05,432.1,77.2,ok
+sg_very_stiff,subgrade,semi_rigid,surrogate_only,0,20,9.5223,0.4761,-1.5,1.0,1.0,1.0,8.77,9.138,1.326,7.396,2.0,14.7,7.0,44.4,16.2,0,0,0.0,0,,,72.97,431.5,86.9,ok
+sg_ltpp_48_0001,subgrade,flexible,surrogate_only,0,20,-2.3772,-0.1189,-1.5,1.0,0.0952,0.05,1.426,0,0.813,5.149,2.0,10.4,11.9,29.4,30.4,0,0,0.0,0,,,76.59,311.4,69.5,ok

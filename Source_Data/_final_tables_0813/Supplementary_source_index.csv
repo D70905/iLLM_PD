@@ -1,0 +1,9 @@
+﻿sheet_name,paper_location,content,source_file
+Fig2_trajectory,Fig. 2,Sequential design trajectory for representative flexible section,output/fig2_04_1034_cost_heatmap_0813/Fig2_04_1034_panel_b_d_source_data.csv
+Fig3_LTPP_design_response,Fig. 3a-c,"LTPP map/table, delivered structures and delivered-design metrics",figures/source/Fig3_LTPP_only_true_delivered_source_data.csv
+Fig4_method_comparison,Fig. 4a,"JTG compliance comparison across iLLM-PD, as-built and AASHTO 1993",Fig4_comparison_practice_v2_source_data_DSR.csv
+Fig4_MEPDG_rutting,Fig. 4b,ME-PDG/NCHRP 1-37A rutting cross-specification check for three seeds per section,Fig4_comparison_practice_v2_source_data_MEPDG.csv
+Fig5_temperature_fatigue,Fig. 5,Post-design temperature-dependent AC fatigue analysis,experiments/batch_climate_12sections_summary.csv
+Fig6_OOD_response,Robustness/OOD figure,Out-of-distribution stress-test aggregate response,ood_aggregate_20260723_133102.csv
+Table1_LTPP_sections,Table 1 / Fig. 3,Twelve selected LTPP sections and delivered design metrics,figures/source/Fig3_LTPP_only_true_delivered_source_data.csv
+Table2_ablation,Table 2,Ablation results by pavement family,ablation_table2.csv

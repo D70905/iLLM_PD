@@ -1,0 +1,9 @@
+case_id,category,pavement_type,mode,n,mean_reward_mean,mean_reward_std,final_dsr_mean,final_scr_mean,scr_traj_mean,B1_mean,B1_min,B3_mean,B3_min,B4_mean,B4_min,escalation_rate_mean,guard_violations_total,wall_clock_total
+cl_extreme_cold,climate,semi_rigid,surrogate_only,3,0.428,0.0,1.0,1.0,1.0,70.437,70.437,1.589,1.589,4.963,4.963,0.0,0,220.0
+cl_extreme_hot,climate,semi_rigid,surrogate_only,3,0.428,0.0,1.0,1.0,1.0,70.437,70.437,1.589,1.589,4.963,4.963,0.0,0,214.8
+mat_soft_base,material,flexible,surrogate_only,3,-1.5,0.0,1.0,1.0,1.0,1.349,1.349,1.108,1.108,2.325,2.325,0.0,0,137.2
+sg_ltpp_48_0001,subgrade,flexible,surrogate_only,3,-0.119,0.0,1.0,0.095,0.05,1.426,1.426,0.813,0.813,5.149,5.149,0.0,0,295.4
+sg_very_soft,subgrade,semi_rigid,surrogate_only,3,0.687,0.0,1.0,1.0,1.0,49.312,49.312,1.603,1.603,3.593,3.593,0.0,0,256.8
+sg_very_stiff,subgrade,semi_rigid,surrogate_only,3,0.476,0.0,1.0,1.0,1.0,8.77,8.77,1.326,1.326,7.396,7.396,0.0,0,223.8
+tr_super_heavy,traffic,semi_rigid,surrogate_only,3,0.428,0.0,1.0,1.0,1.0,70.437,70.437,1.589,1.589,4.963,4.963,0.0,0,219.9
+tr_ultra_light,traffic,flexible,surrogate_only,3,0.297,0.0,1.0,0.619,0.6,2.725,2.725,0.985,0.985,2.873,2.873,0.0,0,239.5

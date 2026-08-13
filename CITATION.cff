@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software or source data, please cite the associated manuscript and archived release."
+title: "iLLM-PD: LLM-assisted pavement design"
+authors:
+  - family-names: "Yan"
+    given-names: "Ivy"
+repository-code: "https://github.com/D70905/iLLM_PD"
+version: "v1.0.0-nc-resubmission"
+date-released: "2026-08-13"
+license: "MIT"

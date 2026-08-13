@@ -1,0 +1,440 @@
+﻿relative_path,action,reason
+README.md,include,root reproducibility/submission file
+requirements.txt,include,root reproducibility/submission file
+environment.yml,include,root reproducibility/submission file
+pyproject.toml,include,root reproducibility/submission file
+env.example,include,root reproducibility/submission file
+SourceData_iLLM-PD_resubmit_0730.xlsx,include,root reproducibility/submission file
+SourceData_iLLM-PD.xlsx,include,root reproducibility/submission file
+experiments/core_results_2048_full.csv,include,selected source/result data
+experiments/core_results_best_compliant.csv,include,selected source/result data
+experiments/batch_climate_12sections_summary.csv,include,selected source/result data
+experiments/16_1010_climate_fatigue.csv,include,selected source/result data
+experiments/ltpp_data/ltpp_12_sections.xlsx,include,selected source/result data
+experiments/ltpp_data/ltpp_12_sections_with_subgrade.xlsx,include,selected source/result data
+experiments/ltpp_data/subgrade_classification.csv,include,selected source/result data
+experiments/ltpp_data/deliverables/ltpp_12_sections_summary.csv,include,selected source/result data
+rl/audit.py,include,included directory rl
+rl/bom.py,include,included directory rl
+rl/brief_parser.py,include,included directory rl
+rl/carbon_factors.py,include,included directory rl
+rl/design_explainer.py,include,included directory rl
+rl/dsr_patch.py,include,included directory rl
+rl/dynamic_modulus.py,include,included directory rl
+rl/env.py,include,included directory rl
+rl/env_surrogate.py,include,included directory rl
+rl/evaluator.py,include,included directory rl
+rl/explain_unified.py,include,included directory rl
+rl/fea_strain_provider.py,include,included directory rl
+rl/generator.py,include,included directory rl
+rl/guards.py,include,included directory rl
+rl/hitl.py,include,included directory rl
+rl/lca_gwp.py,include,included directory rl
+rl/lcc_mo.py,include,included directory rl
+rl/lifecycle.py,include,included directory rl
+rl/lifecycle_climate.py,include,included directory rl
+rl/lifecycle_lcc_intl.py,include,included directory rl
+rl/lifecycle_mepdg.py,include,included directory rl
+rl/llm_client.py,include,included directory rl
+rl/metrics.py,include,included directory rl
+rl/mo_objectives.py,include,included directory rl
+rl/policy.py,include,included directory rl
+rl/rag.py,include,included directory rl
+rl/reward.py,include,included directory rl
+rl/reward_mo.py,include,included directory rl
+rl/spec_verifier.py,include,included directory rl
+rl/surrogate_backend.py,include,included directory rl
+rl/surrogate_predictor.py,include,included directory rl
+rl/train.py,include,included directory rl
+rl/__init__.py,include,included directory rl
+rl/__pycache__/audit.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/audit.cpython-313.pyc,exclude,excluded directory
+rl/__pycache__/bom.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/brief_parser.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/brief_parser.cpython-312.pyc,exclude,excluded directory
+rl/__pycache__/carbon_factors.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/design_explainer.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/dsr_patch.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/dynamic_modulus.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/env.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/env.cpython-312.pyc,exclude,excluded directory
+rl/__pycache__/env.cpython-313.pyc,exclude,excluded directory
+rl/__pycache__/env_surrogate.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/evaluator.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/fea_strain_provider.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/generator.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/generator.cpython-312.pyc,exclude,excluded directory
+rl/__pycache__/generator.cpython-313.pyc,exclude,excluded directory
+rl/__pycache__/guards.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/hitl.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/lca_gwp.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/lcc_mo.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/lifecycle.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/lifecycle_climate.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/lifecycle_lcc_intl.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/lifecycle_lcc_intl.cpython-312.pyc,exclude,excluded directory
+rl/__pycache__/lifecycle_mepdg.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/llm_client.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/llm_client.cpython-312.pyc,exclude,excluded directory
+rl/__pycache__/llm_client.cpython-313.pyc,exclude,excluded directory
+rl/__pycache__/metrics.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/mo_objectives.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/mo_objectives.cpython-312.pyc,exclude,excluded directory
+rl/__pycache__/policy.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/rag.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/rag.cpython-312.pyc,exclude,excluded directory
+rl/__pycache__/reward.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/reward_mo.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/spec_verifier.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/surrogate_backend.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/surrogate_predictor.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/train.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/train.cpython-312.pyc,exclude,excluded directory
+rl/__pycache__/train.cpython-313.pyc,exclude,excluded directory
+rl/__pycache__/__init__.cpython-310.pyc,exclude,excluded directory
+rl/__pycache__/__init__.cpython-312.pyc,exclude,excluded directory
+rl/__pycache__/__init__.cpython-313.pyc,exclude,excluded directory
+specs/jtg_d50.py,include,included directory specs
+specs/mepdg.py,include,included directory specs
+specs/protocol.py,include,included directory specs
+specs/router.py,include,included directory specs
+specs/__init__.py,include,included directory specs
+specs/data/jtg_d50.json,include,included directory specs
+specs/data/mepdg.json,include,included directory specs
+specs/__pycache__/jtg_d50.cpython-310.pyc,exclude,excluded directory
+specs/__pycache__/mepdg.cpython-310.pyc,exclude,excluded directory
+specs/__pycache__/protocol.cpython-310.pyc,exclude,excluded directory
+specs/__pycache__/router.cpython-310.pyc,exclude,excluded directory
+specs/__pycache__/__init__.cpython-310.pyc,exclude,excluded directory
+fea/abaqus_script.py,include,included directory fea
+fea/runner.py,include,included directory fea
+fea/verify.py,include,included directory fea
+fea/__init__.py,include,included directory fea
+fea/__pycache__/abaqus_script.cpython-310.pyc,exclude,excluded directory
+fea/__pycache__/runner.cpython-310.pyc,exclude,excluded directory
+fea/__pycache__/verify.cpython-310.pyc,exclude,excluded directory
+fea/__pycache__/__init__.cpython-310.pyc,exclude,excluded directory
+config/fea_defaults.yaml,include,included directory config
+config/llm_config.yaml,include,included directory config
+config/mo.yaml,include,included directory config
+config/rl_default.yaml,include,included directory config
+config/rl_small.yaml,include,included directory config
+scripts/ablation_inference.py,include,included directory scripts
+scripts/ablation_watchdog.py,include,included directory scripts
+scripts/add_lcc_methods.py,include,included directory scripts
+scripts/add_s13_s9stats.py,include,included directory scripts
+scripts/add_table2.py,include,included directory scripts
+scripts/analyze_ltpp_measured_performance.py,include,included directory scripts
+scripts/batch_climate_12sections.py,include,included directory scripts
+scripts/build_ncat_case.py,include,included directory scripts
+scripts/build_sourcedata.py,include,included directory scripts
+scripts/build_sourcedata_v2.py,include,included directory scripts
+scripts/calibrate_evaluator_threshold.py,include,included directory scripts
+scripts/calibrate_mastercurve_from_fwd.py,include,included directory scripts
+scripts/check_environment.py,include,included directory scripts
+scripts/clean_rag_supplement.py,include,included directory scripts
+scripts/debug_delivered.py,include,included directory scripts
+scripts/delivered_result_helper.py,include,included directory scripts
+scripts/demo_hitl.py,include,included directory scripts
+scripts/diagnose_climate_effect.py,include,included directory scripts
+scripts/diagnose_climate_from_real_monthly.py,include,included directory scripts
+scripts/diagnose_ncat_validation_model.py,include,included directory scripts
+scripts/diagnose_rag.py,include,included directory scripts
+scripts/diagnose_rag_en.py,include,included directory scripts
+scripts/dump_rag_queries.py,include,included directory scripts
+scripts/expand_parser_test.py,include,included directory scripts
+scripts/extract_fwd_temperature_modulus_pairs.py,include,included directory scripts
+scripts/extract_hara_fea_for_mepdg.py,include,included directory scripts
+scripts/extract_ltpp_rut_crack.py,include,included directory scripts
+scripts/fill_sourcedata.py,include,included directory scripts
+scripts/ingest_regional_knowledge.py,include,included directory scripts
+scripts/insert_abstract_sections.py,include,included directory scripts
+scripts/lhs_sample_for_surrogate.py,include,included directory scripts
+scripts/ltpp_inference.py,include,included directory scripts
+scripts/mc_estar.py,include,included directory scripts
+scripts/ncat_mepdg_rutting.py,include,included directory scripts
+scripts/nsga2_benchmark.py,include,included directory scripts
+scripts/rebuild_rag_m3.py,include,included directory scripts
+scripts/regenerate_core_results.py,include,included directory scripts
+scripts/run_aashto1993_baseline.py,include,included directory scripts
+scripts/run_ablation.py,include,included directory scripts
+scripts/run_alpha_sensitivity.py,include,included directory scripts
+scripts/run_asbuilt_baseline.py,include,included directory scripts
+scripts/run_climate_adaptive_design.py,include,included directory scripts
+scripts/run_cross_llm_robustness.py,include,included directory scripts
+scripts/run_mepdg_cross_spec_check.py,include,included directory scripts
+scripts/run_mo_sweep.py,include,included directory scripts
+scripts/run_ncat_design_benchmark.py,include,included directory scripts
+scripts/run_ncat_external_validation.py,include,included directory scripts
+scripts/run_ncat_external_validation_safe.py,include,included directory scripts
+scripts/run_ncat_feasibility_audit.py,include,included directory scripts
+scripts/run_ncat_validation.py,include,included directory scripts
+scripts/run_nchrp_baseline.py,include,included directory scripts
+scripts/run_ood_stress_test.py,include,included directory scripts
+scripts/run_parser_latency_benchmark.py,include,included directory scripts
+scripts/run_reward_sensitivity.py,include,included directory scripts
+scripts/run_riohtrack_asbuilt.py,include,included directory scripts
+scripts/run_riohtrack_hara_inference.py,include,included directory scripts
+scripts/run_riohtrack_hara_inference_v2.py,include,included directory scripts
+scripts/run_section_climate_loop.py,include,included directory scripts
+scripts/test_nl_parser.py,include,included directory scripts
+scripts/test_nl_safety_end2end.py,include,included directory scripts
+scripts/train_surrogate.py,include,included directory scripts
+scripts/train_surrogate_v2.py,include,included directory scripts
+scripts/write_readme.py,include,included directory scripts
+scripts/__init__.py,include,included directory scripts
+scripts/analysis/difficulty_stratified_ablation.py,include,included directory scripts
+scripts/analysis/extract_process_metrics.py,include,included directory scripts
+scripts/analysis/nl_parser_results.json,include,included directory scripts
+scripts/analysis/nl_safety_end2end_results.json,include,included directory scripts
+scripts/analysis/parser_expanded_results.json,include,included directory scripts
+scripts/analysis/parser_latency_benchmark.json,include,included directory scripts
+scripts/analysis/parser_latency_benchmark.md,include,included directory scripts
+scripts/analysis/parser_latency_benchmark_details.csv,include,included directory scripts
+scripts/analysis/parser_latency_benchmark_live3.json,include,included directory scripts
+scripts/analysis/parser_latency_benchmark_live3.md,include,included directory scripts
+scripts/analysis/parser_latency_benchmark_live3_details.csv,include,included directory scripts
+scripts/analysis/parser_latency_benchmark_live3_summary.csv,include,included directory scripts
+scripts/analysis/parser_latency_benchmark_summary.csv,include,included directory scripts
+scripts/analysis/process_metrics_summary.csv,include,included directory scripts
+scripts/analysis/semirigid_escalation_report.py,include,included directory scripts
+scripts/analysis/statistical_tests.py,include,included directory scripts
+scripts/analysis/statistical_tests_v2.py,include,included directory scripts
+scripts/__pycache__/delivered_result_helper.cpython-310.pyc,exclude,excluded directory
+scripts/__pycache__/dump_rag_queries.cpython-312.pyc,exclude,excluded directory
+scripts/__pycache__/extract_hara_fea_for_mepdg.cpython-312.pyc,exclude,excluded directory
+scripts/__pycache__/ltpp_inference.cpython-310.pyc,exclude,excluded directory
+scripts/__pycache__/ltpp_inference.cpython-312.pyc,exclude,excluded directory
+scripts/__pycache__/mc_estar.cpython-310.pyc,exclude,excluded directory
+scripts/__pycache__/rebuild_rag_m3.cpython-312.pyc,exclude,excluded directory
+scripts/__pycache__/run_alpha_sensitivity.cpython-310.pyc,exclude,excluded directory
+scripts/__pycache__/run_cross_llm_robustness.cpython-312.pyc,exclude,excluded directory
+scripts/__pycache__/run_mepdg_cross_spec_check.cpython-310.pyc,exclude,excluded directory
+scripts/__pycache__/run_ood_stress_test.cpython-310.pyc,exclude,excluded directory
+scripts/__pycache__/run_ood_stress_test.cpython-312.pyc,exclude,excluded directory
+scripts/__pycache__/test_v3_loads.cpython-310.pyc,exclude,excluded directory
+scripts/__pycache__/__init__.cpython-310.pyc,exclude,excluded directory
+scripts/__pycache__/__init__.cpython-312.pyc,exclude,excluded directory
+plot/add_pdf_output.py,include,included directory plot
+plot/FIG1.pdf,include,included directory plot
+plot/Fig2_0707.pdf,include,included directory plot
+plot/Fig2_0707.png,include,included directory plot
+plot/Fig2_convergence_real.pdf,include,included directory plot
+plot/Fig2_convergence_real.png,include,included directory plot
+plot/fig2_convergence_real.py,include,included directory plot
+plot/fig2_heatmap.png,include,included directory plot
+plot/fig2_heatmap.py,include,included directory plot
+plot/fig2_heatmap_backup.py,exclude,excluded temp/backup pattern
+plot/Fig2_轨迹图.png,include,included directory plot
+plot/Fig3_design_response_revised_editable.svg,include,included directory plot
+plot/Fig3_design_response_revised_pillow.pdf,include,included directory plot
+plot/Fig3_design_response_revised_pillow.png,include,included directory plot
+plot/Fig3_design_response_revised_pillow_largefont.pdf,include,included directory plot
+plot/Fig3_design_response_revised_pillow_largefont.png,include,included directory plot
+plot/Fig3_revised_source_data.csv,include,included directory plot
+plot/Fig4_clean_corrected.pdf,include,included directory plot
+plot/Fig4_clean_corrected.png,include,included directory plot
+plot/fig4_clean_corrected.py,include,included directory plot
+plot/Fig4_comparison_practice_v2.pdf,include,included directory plot
+plot/Fig4_comparison_practice_v2.png,include,included directory plot
+plot/fig4_comparison_practice_v2_pillow.py,include,included directory plot
+plot/Fig4_comparison_practice_v2_source_data.csv,include,included directory plot
+plot/Fig4_comparison_practice_v2_source_data_DSR.csv,include,included directory plot
+plot/Fig4_comparison_practice_v2_source_data_HPDS.csv,include,included directory plot
+plot/Fig4_comparison_practice_v2_source_data_MEPDG.csv,include,included directory plot
+plot/fig4_plan1.py,include,included directory plot
+plot/fig4_plan2.py,include,included directory plot
+plot/fig4_revised.py,include,included directory plot
+plot/Fig4_three_panel_v3.pdf,include,included directory plot
+plot/Fig4_three_panel_v3.png,include,included directory plot
+plot/fig4_three_panel_v3_pillow.py,include,included directory plot
+plot/Fig4_three_panel_v3_source_data_HPDS.csv,include,included directory plot
+plot/Fig4_three_panel_v3_source_data_JTG_DSR.csv,include,included directory plot
+plot/Fig4_three_panel_v3_source_data_MEPDG.csv,include,included directory plot
+plot/FIG5_combined.pdf,include,included directory plot
+plot/Fig5_main_0607.pdf,include,included directory plot
+plot/Fig5_main_0607.png,include,included directory plot
+plot/fig5_main_gpt.py,include,included directory plot
+plot/fig6_climate_4panel.pdf,include,included directory plot
+plot/fig6_climate_4panel.png,include,included directory plot
+plot/fig6_climate_4panel.py,include,included directory plot
+plot/fig6_climate_4panel.py.bak,exclude,excluded temp/backup pattern
+plot/fig6_climate_4panel.py.bak_fontsize_0812,exclude,excluded temp/backup pattern
+plot/fig6_climate_4panel.svg,include,included directory plot
+plot/fig7_final.pdf,include,included directory plot
+plot/fig7_final.png,include,included directory plot
+plot/fig7_final.py,include,included directory plot
+plot/fig7_final.py.bak_fontsize_0812,exclude,excluded temp/backup pattern
+plot/fig7_final.svg,include,included directory plot
+plot/fig7_nc_4panel.pdf,include,included directory plot
+plot/fig7_nc_4panel.png,include,included directory plot
+plot/fig7_nc_4panel.py,include,included directory plot
+plot/fig7_nc_4panel.svg,include,included directory plot
+plot/fig7_nc_4panel_v2.pdf,include,included directory plot
+plot/fig7_nc_4panel_v2.png,include,included directory plot
+plot/fig7_nc_4panel_v2.py,include,included directory plot
+plot/fig7_nc_4panel_v2.svg,include,included directory plot
+plot/fig7_v3_4panel.pdf,include,included directory plot
+plot/fig7_v3_4panel.png,include,included directory plot
+plot/fig7_v3_4panel.py,include,included directory plot
+plot/fig7_v3_4panel.svg,include,included directory plot
+plot/fig7_v4_3panel.pdf,include,included directory plot
+plot/fig7_v4_3panel.png,include,included directory plot
+plot/fig7_v4_3panel.py,include,included directory plot
+plot/fig7_v4_3panel.svg,include,included directory plot
+plot/fig_fea_contour_0607.png,include,included directory plot
+plot/fig_fea_contour_0607.svg,include,included directory plot
+plot/fig_fea_contour_clean.py,include,included directory plot
+plot/fig_fea_contour_clean_jet_backup.py,exclude,excluded temp/backup pattern
+plot/fig_pareto.py,include,included directory plot
+plot/LTPP_12sections_map.pdf,include,included directory plot
+plot/LTPP_12sections_map.png,include,included directory plot
+plot/LTPP_12sections_map_v2.pdf,include,included directory plot
+plot/ltpp_map.py,include,included directory plot
+plot/Planck_Fig4_plan1.pdf,include,included directory plot
+plot/Planck_Fig4_plan1.png,include,included directory plot
+plot/Planck_Fig4_plan1.svg,include,included directory plot
+plot/Planck_Fig4_plan2.pdf,include,included directory plot
+plot/Planck_Fig4_plan2.png,include,included directory plot
+plot/Planck_Fig4_plan2.svg,include,included directory plot
+plot/Planck_Fig4_revised.pdf,include,included directory plot
+plot/Planck_Fig4_revised.png,include,included directory plot
+plot/Planck_Fig4_revised.svg,include,included directory plot
+plot/plot_fig3_design_response_revised_editable_svg.py,include,included directory plot
+plot/plot_fig3_design_response_revised_pillow.py,include,included directory plot
+plot/us-states.geojson,include,included directory plot
+plot/archive/Fig2_convergence.png,exclude,excluded directory
+plot/archive/fig2_convergence.py,exclude,excluded directory
+plot/archive/fig2_heatmap.png,exclude,excluded directory
+plot/archive/fig2_heatmap.py,exclude,excluded directory
+plot/archive/fig3_composite.py,exclude,excluded directory
+plot/archive/Fig3_matrix.png,exclude,excluded directory
+plot/archive/fig3_matrix.py,exclude,excluded directory
+plot/archive/Fig3_matrix_realdata.png,exclude,excluded directory
+plot/archive/fig3_matrix_realdata.py,exclude,excluded directory
+plot/archive/Fig3_trends.png,exclude,excluded directory
+plot/archive/fig3_trends.py,exclude,excluded directory
+plot/archive/Fig5_FEA_real.png,exclude,excluded directory
+plot/archive/fig5_fea_real.py,exclude,excluded directory
+plot/archive/Fig5_FEA_verification.png,exclude,excluded directory
+plot/archive/fig5_fea_verification.py,exclude,excluded directory
+plot/archive/fig6_climate_sensitivity_local.py,exclude,excluded directory
+plot/archive/Fig7_OOD_matrix_audit.png,exclude,excluded directory
+plot/archive/fig7_ood_matrix_audit.py,exclude,excluded directory
+plot/archive/Fig7_OOD_robustness.png,exclude,excluded directory
+plot/archive/fig7_ood_robustness.py,exclude,excluded directory
+plot/__pycache__/fig7_nc_4panel.cpython-312.pyc,exclude,excluded directory
+plot/__pycache__/fig7_nc_4panel_v2.cpython-312.pyc,exclude,excluded directory
+plot/__pycache__/fig7_v3_4panel.cpython-312.pyc,exclude,excluded directory
+examples/analyze_training.py,include,included directory examples
+examples/ingest_rag_corpus.py,include,included directory examples
+examples/run_fea_demo.py,include,included directory examples
+examples/run_with_spec_demo.py,include,included directory examples
+examples/smoke_test_dual_base.py,include,included directory examples
+examples/test_evaluator_rag.py,include,included directory examples
+examples/train_ppo_surrogate_smoke.py,include,included directory examples
+tests/conftest.py,include,included directory tests
+tests/test_fea_smoke.py,include,included directory tests
+tests/test_ncat_external_validation_portable.py,include,included directory tests
+tests/test_ncat_external_validation_safe.py,include,included directory tests
+tests/test_ncat_feasibility_audit.py,include,included directory tests
+tests/test_ncat_interface_pressure_outputs.py,include,included directory tests
+experiments/sourcedata/Fig2.xlsx,include,included directory experiments/sourcedata
+experiments/sourcedata/Fig3.xlsx,include,included directory experiments/sourcedata
+experiments/sourcedata/Fig5b.xlsx,include,included directory experiments/sourcedata
+experiments/sourcedata/Fig6.xlsx,include,included directory experiments/sourcedata
+experiments/sourcedata/Fig7a.xlsx,include,included directory experiments/sourcedata
+experiments/sourcedata/Table1.xlsx,include,included directory experiments/sourcedata
+experiments/sourcedata/Table2.xlsx,include,included directory experiments/sourcedata
+experiments/sourcedata/HPDS_validation/16_1010.dat,exclude,excluded binary/intermediate extension
+experiments/sourcedata/HPDS_validation/16_1010_3.txt,include,included directory experiments/sourcedata
+experiments/sourcedata/HPDS_validation/16_1010_4.dat,exclude,excluded binary/intermediate extension
+experiments/sourcedata/HPDS_validation/16_1010_4.txt,include,included directory experiments/sourcedata
+experiments/sourcedata/HPDS_validation/30_7076_3.dat,exclude,excluded binary/intermediate extension
+experiments/sourcedata/HPDS_validation/30_7076_3.txt,include,included directory experiments/sourcedata
+experiments/sourcedata/HPDS_validation/30_7076_4.dat,exclude,excluded binary/intermediate extension
+experiments/sourcedata/HPDS_validation/30_7076_4.txt,include,included directory experiments/sourcedata
+experiments/sourcedata/HPDS_validation/48_0001_3.dat,exclude,excluded binary/intermediate extension
+experiments/sourcedata/HPDS_validation/48_0001_3.txt,include,included directory experiments/sourcedata
+experiments/sourcedata/HPDS_validation/48_0001_4.dat,exclude,excluded binary/intermediate extension
+experiments/sourcedata/HPDS_validation/48_0001_4.txt,include,included directory experiments/sourcedata
+experiments/sourcedata/HPDS_validation/HPDS验证结果/16_1010.dat,exclude,excluded binary/intermediate extension
+experiments/sourcedata/HPDS_validation/HPDS验证结果/16_1010_3.txt,include,included directory experiments/sourcedata
+experiments/sourcedata/HPDS_validation/HPDS验证结果/16_1010_4.dat,exclude,excluded binary/intermediate extension
+experiments/sourcedata/HPDS_validation/HPDS验证结果/16_1010_4.txt,include,included directory experiments/sourcedata
+experiments/sourcedata/HPDS_validation/HPDS验证结果/30_7076_3.dat,exclude,excluded binary/intermediate extension
+experiments/sourcedata/HPDS_validation/HPDS验证结果/30_7076_3.txt,include,included directory experiments/sourcedata
+experiments/sourcedata/HPDS_validation/HPDS验证结果/30_7076_4.dat,exclude,excluded binary/intermediate extension
+experiments/sourcedata/HPDS_validation/HPDS验证结果/30_7076_4.txt,include,included directory experiments/sourcedata
+experiments/sourcedata/HPDS_validation/HPDS验证结果/48_0001_3.dat,exclude,excluded binary/intermediate extension
+experiments/sourcedata/HPDS_validation/HPDS验证结果/48_0001_3.txt,include,included directory experiments/sourcedata
+experiments/sourcedata/HPDS_validation/HPDS验证结果/48_0001_4.dat,exclude,excluded binary/intermediate extension
+experiments/sourcedata/HPDS_validation/HPDS验证结果/48_0001_4.txt,include,included directory experiments/sourcedata
+experiments/ncat_data/Dynamic Modulus_Mastercurves.xlsx,include,included directory experiments/ncat_data
+experiments/ncat_data/Field Data.xlsx,include,included directory experiments/ncat_data
+experiments/ncat_data/ncat_cases.json,include,included directory experiments/ncat_data
+experiments/ncat_data/ncat_sections_row.csv,include,included directory experiments/ncat_data
+experiments/ncat_data/ncat_temp_sensitivity.csv,include,included directory experiments/ncat_data
+experiments/ncat_data/ncat_temp_sensitivity_honest.csv,include,included directory experiments/ncat_data
+experiments/ncat_data/ncat_temp_sensitivity_README.txt,include,included directory experiments/ncat_data
+experiments/ncat_external_validation/results_20260716/ncat_asbuilt_vs_design_real_fea_summary.json,include,included directory experiments/ncat_external_validation/results_20260716
+experiments/ncat_external_validation/results_20260716/ncat_asbuilt_vs_design_real_fea_summary.md,include,included directory experiments/ncat_external_validation/results_20260716
+experiments/ncat_external_validation/results_20260716/ncat_manuscript_insertion_package.md,include,included directory experiments/ncat_external_validation/results_20260716
+experiments/ncat_external_validation/results_20260716/ncat_material_sensitivity_20260716_111322.csv,include,included directory experiments/ncat_external_validation/results_20260716
+experiments/ncat_external_validation/results_20260716/ncat_material_sensitivity_interpretation.md,include,included directory experiments/ncat_external_validation/results_20260716
+experiments/ncat_external_validation/results_20260716/ncat_material_sensitivity_summary_20260716_111322.json,include,included directory experiments/ncat_external_validation/results_20260716
+experiments/ltpp_data/scripts/backcalc_subgrade.py,include,included directory experiments/ltpp_data/scripts
+experiments/ltpp_data/scripts/candidate_scan.py,include,included directory experiments/ltpp_data/scripts
+experiments/ltpp_data/scripts/extract_ltpp_sections.py,include,included directory experiments/ltpp_data/scripts
+experiments/ltpp_data/scripts/extract_monthly_temperature.py,include,included directory experiments/ltpp_data/scripts
+experiments/ltpp_data/scripts/section_selection_final12.yaml,include,included directory experiments/ltpp_data/scripts
+experiments/ltpp_data/scripts/section_selection_test_idaho_v2.yaml,include,included directory experiments/ltpp_data/scripts
+experiments/ltpp_data/scripts/tables_in_sdr39_id.txt,include,included directory experiments/ltpp_data/scripts
+experiments/ltpp_data/deliverables/ablation_inference/ablation_inference_summary.csv,include,included directory experiments/ltpp_data/deliverables/ablation_inference
+experiments/ltpp_data/deliverables/ablation_inference/ablation_inference_summary__no-generator-no-rag__flexible.csv,include,included directory experiments/ltpp_data/deliverables/ablation_inference
+experiments/ltpp_data/deliverables/ablation_inference/ablation_inference_summary__no-guard__flexible.csv,include,included directory experiments/ltpp_data/deliverables/ablation_inference
+experiments/ltpp_data/deliverables/ablation_inference/ablation_inference_summary__no-language-no-guard__flexible.csv,include,included directory experiments/ltpp_data/deliverables/ablation_inference
+experiments/ltpp_data/deliverables/ablation_inference/ablation_table2.csv,include,included directory experiments/ltpp_data/deliverables/ablation_inference
+experiments/ltpp_data/deliverables/ablation_inference/ablation_table2__no-generator-no-rag__flexible.csv,include,included directory experiments/ltpp_data/deliverables/ablation_inference
+experiments/ltpp_data/deliverables/ablation_inference/ablation_table2__no-guard__flexible.csv,include,included directory experiments/ltpp_data/deliverables/ablation_inference
+experiments/ltpp_data/deliverables/ablation_inference/ablation_table2__no-language-no-guard__flexible.csv,include,included directory experiments/ltpp_data/deliverables/ablation_inference
+experiments/ltpp_data/deliverables/cross_llm/cross_llm_summary_20260525_230940.csv,include,included directory experiments/ltpp_data/deliverables/cross_llm
+experiments/ltpp_data/deliverables/ltpp_asbuilt/asbuilt_summary_20260524_141815.csv,include,included directory experiments/ltpp_data/deliverables/ltpp_asbuilt
+experiments/ltpp_data/deliverables/ltpp_asbuilt/asbuilt_summary_20260525_001540.csv,include,included directory experiments/ltpp_data/deliverables/ltpp_asbuilt
+experiments/ltpp_data/deliverables/ltpp_asbuilt/asbuilt_summary_20260525_005649.csv,include,included directory experiments/ltpp_data/deliverables/ltpp_asbuilt
+experiments/ltpp_data/deliverables/ltpp_aashto1993/aashto1993_summary_20260525_095437.csv,include,included directory experiments/ltpp_data/deliverables/ltpp_aashto1993
+experiments/ltpp_data/deliverables/ltpp_inference_esal_20260808/ltpp_inference_steps_20260808_170223.jsonl,include,included directory experiments/ltpp_data/deliverables/ltpp_inference_esal_20260808
+experiments/ltpp_data/deliverables/ltpp_inference_esal_20260808/ltpp_inference_summary_20260808_170223.csv,include,included directory experiments/ltpp_data/deliverables/ltpp_inference_esal_20260808
+experiments/ltpp_data/deliverables/mepdg_check/hara_fea_responses_20260526_122713.csv,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/mepdg_check/hara_fea_responses_20260527_114131.csv,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/mepdg_check/mepdg_check_aggregate_20260526_092938.csv,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/mepdg_check/mepdg_check_aggregate_20260526_130125.csv,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/mepdg_check/mepdg_check_aggregate_20260527_114533.csv,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/mepdg_check/mepdg_check_aggregate_strict_20260526_130137.csv,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/mepdg_check/mepdg_check_aggregate_strict_20260527_114547.csv,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/mepdg_check/mepdg_check_per_run_20260526_092510.csv,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/mepdg_check/mepdg_check_per_run_20260526_092638.csv,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/mepdg_check/mepdg_check_per_run_20260526_092938.csv,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/mepdg_check/mepdg_check_per_run_20260526_130125.csv,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/mepdg_check/mepdg_check_per_run_20260527_114533.csv,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/mepdg_check/mepdg_check_per_run_strict_20260526_130137.csv,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/mepdg_check/mepdg_check_per_run_strict_20260527_114547.csv,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/mepdg_check/MEPDG_cross_spec_check_R3-12.xlsx,include,included directory experiments/ltpp_data/deliverables/mepdg_check
+experiments/ltpp_data/deliverables/ood_stress/ood_aggregate_20260525_203451.csv,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_aggregate_20260525_210614.csv,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_aggregate_20260526_132846.csv,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_aggregate_20260527_124039.csv,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_aggregate_20260723_090556.csv,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_aggregate_20260723_133102.csv,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_per_run_20260525_203451.csv,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_per_run_20260525_210614.csv,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_per_run_20260526_132846.csv,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_per_run_20260527_124039.csv,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_per_run_20260723_090556.csv,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_per_run_20260723_133102.csv,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_trajectories_20260525_203451.json,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_trajectories_20260525_210614.json,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_trajectories_20260526_132846.json,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_trajectories_20260527_124039.json,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_trajectories_20260723_090556.json,include,included directory experiments/ltpp_data/deliverables/ood_stress
+experiments/ltpp_data/deliverables/ood_stress/ood_trajectories_20260723_133102.json,include,included directory experiments/ltpp_data/deliverables/ood_stress

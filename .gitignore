@@ -1,0 +1,35 @@
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Local solver outputs and large working files
+*.odb
+*.inp
+*.stt
+*.dat
+*.msg
+*.sim
+*.prt
+*.com
+*.sta
+*.lck
+
+# Local databases and temporary outputs
+*.accdb
+*.log
+tmp/
+temp/
+output/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

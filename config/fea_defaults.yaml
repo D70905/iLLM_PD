@@ -1,0 +1,39 @@
+# FEA default parameters for axisymmetric pavement analysis
+# Used as fallback when pavement_input.json is not provided
+# Loaded by experiments/* scripts and tests/*
+
+# === Pavement structure (top-down) ===
+# [surface, base, subbase]
+pavement:
+  thickness:    [0.15, 0.30, 0.20]      # m
+  modulus:      [1500.0, 600.0, 200.0]  # MPa
+  poisson:      [0.30, 0.25, 0.35]
+
+# === Subgrade ===
+subgrade:
+  E:  50.0      # MPa
+  nu: 0.40
+
+# === Wheel load (BZZ-100 single-circle equivalent) ===
+load:
+  pressure: 0.7        # MPa
+  radius:   0.1065     # m  (equivalent radius for BZZ-100 dual-tire single circle)
+
+# === Sensor offsets for deflection basin ===
+# Standard FWD sensor spacing (m from load center)
+sensor_offsets: [0.0, 0.20, 0.30, 0.60, 0.90, 1.20, 1.50]
+
+# === Solver ===
+solver:
+  num_cpus: 4
+
+# === Mesh (for future tuning) ===
+mesh:
+  global_size:     0.10     # m
+  load_area_size:  0.02     # m
+  surface_size:    0.05     # m
+
+# === Domain ===
+domain:
+  R_DOMAIN:   8.0           # m  (radial extent; consider 10-12 for thicker pavements)
+  Z_SUBGRADE: 8.0           # m  (subgrade depth below pavement bottom)

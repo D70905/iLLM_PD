@@ -1,0 +1,9 @@
+variant,base_type,DSR_mean,DSR_sd,SCR_mean,SCR_sd,cost_mean,cost_sd,n
+full,flexible,1.0,0.0,0.997,0.011,37.6,0.4,18
+full,semi_rigid,1.0,0.0,1.0,0.0,54.7,1.5,18
+no-generator,flexible,1.0,0.0,0.847,0.202,38.2,0.6,18
+no-generator,semi_rigid,1.0,0.0,1.0,0.0,55.6,1.2,18
+no-rag,flexible,1.0,0.0,0.937,0.106,40.8,1.8,18
+no-rag,semi_rigid,1.0,0.0,1.0,0.0,54.8,1.5,18
+no-guard,flexible,1.0,0.0,0.659,0.321,41.6,0.5,18
+no-guard,semi_rigid,1.0,0.0,1.0,0.0,52.8,2.5,18

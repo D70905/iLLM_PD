@@ -1,0 +1,10 @@
+section,E_sub,approach,status,main_label,sub_label
+16_1010,78 MPa,HPDS_base_layer,fail,B1 fail,1020 mm
+16_1010,78 MPa,HPDS_AC_layer,fail,B3 fail,15.86 mm
+16_1010,78 MPa,iLLM_PD_five_layer,pass,DSR 1.0,5-layer
+48_0001,700 MPa,HPDS_base_layer,fail,B3 fail,15.87 mm
+48_0001,700 MPa,HPDS_AC_layer,fail,B3 fail,15.87 mm
+48_0001,700 MPa,iLLM_PD_five_layer,pass,DSR 1.0,5-layer
+30_7076,59 MPa,HPDS_base_layer,pass,Pass*,initial base
+30_7076,59 MPa,HPDS_AC_layer,fail,B3 fail,15.94 mm
+30_7076,59 MPa,iLLM_PD_five_layer,pass,DSR 1.0,5-layer

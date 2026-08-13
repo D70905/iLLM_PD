@@ -1,0 +1,152 @@
+{
+  "_metadata": {
+    "spec_name": "ME-PDG (NCHRP 1-37A)",
+    "spec_title_en": "Mechanistic-Empirical Pavement Design Guide",
+    "primary_reference": "NCHRP Report 1-37A (2004), Guide for Mechanistic-Empirical Design of New and Rehabilitated Pavement Structures",
+    "successor_publication": "AASHTO Pavement ME Design (AASHTOWare, 2008+)",
+    "issued_by": "AASHTO (American Association of State Highway and Transportation Officials)",
+    "current_status": "Official AASHTO design method since 2008 (supersedes AASHTO 1993)",
+    "verification_status": "National calibration coefficients VERIFIED against NCHRP 1-37A. Simplifications below documented explicitly.",
+    "simplifications_applied": [
+      "Single equivalent annual temperature (no seasonal climate variation)",
+      "Single equivalent axle load BZZ-100 instead of full axle load spectrum",
+      "Single equivalent dynamic modulus instead of E*(f, T) master curve",
+      "Single-pass evaluation at reference condition (no Miner's law damage accumulation across seasons)",
+      "Bottom-up fatigue and total rutting only (NOT implementing: top-down fatigue, thermal cracking, IRI evolution)"
+    ]
+  },
+
+  "standard_axle_load": {
+    "ESAL_definition": "18-kip (80 kN) Equivalent Single Axle Load (ESAL)",
+    "ESAL_axle_load_kN": 80.0,
+    "_note_for_iLLM_PD": "For cross-spec comparability with JTG D50-2017, our simplified implementation uses BZZ-100 (100 kN) as the equivalent single axle. This introduces a ~25% bias relative to formal ME-PDG ESAL definition; documented as simplification."
+  },
+
+  "fatigue_cracking_model": {
+    "_ref": "NCHRP 1-37A Section 3.3.3, Eq. 3.3.1-3.3.3 (bottom-up fatigue)",
+    "model_form": "N_f = k1 · β_f1 · C · (1/ε_t)^β_f2 · (1/E)^β_f3",
+    "where": {
+      "N_f":  "Number of repetitions to fatigue cracking initiation",
+      "ε_t":  "Tensile strain at the bottom of HMA layer (in/in or m/m)",
+      "E":    "Dynamic modulus of HMA layer (psi or MPa)",
+      "k1":   "Thickness adjustment factor",
+      "C":    "Asphalt binder content correction factor",
+      "β_f1, β_f2, β_f3": "Calibration coefficients"
+    },
+    "national_calibration_coefficients": {
+      "_verification": "VERIFIED — these are the published NCHRP 1-37A national calibration values, widely cited in literature.",
+      "beta_f1": 0.00432,
+      "beta_f2": 3.9492,
+      "beta_f3": 1.281,
+      "_unit_convention": "When ε_t in microstrain and E in MPa, units must be converted; we use ε_t in microstrain and E in MPa internally, then apply unit-consistency factor."
+    },
+    "thickness_adjustment": {
+      "_ref": "NCHRP 1-37A Eq. 3.3.4",
+      "name": "k1 (thickness correction)",
+      "form": "k1 = 1 / (0.000398 + (0.003602 / (1 + exp(11.02 - 3.49·h_AC))))",
+      "where": {
+        "h_AC": "asphalt layer thickness (inch)"
+      }
+    },
+    "C_factor": {
+      "form": "C = 10^M, where M = 4.84·(V_b/(V_a + V_b) - 0.69)",
+      "_simplification_iLLM_PD": "We use C = 1.0 (typical mix) since we don't have V_b (binder content) and V_a (air voids) as inputs.",
+      "where": {
+        "V_b": "effective binder content (% by volume)",
+        "V_a": "air voids (% by volume)"
+      }
+    },
+    "fatigue_cracking_transfer_function": {
+      "_ref": "NCHRP 1-37A Eq. 3.3.5",
+      "form": "FC = (6000 / (1 + exp(C1·C1'+C2·C2'·log10(D·100)))) · (1/60)",
+      "where": {
+        "FC": "fatigue cracking (% of lane area)",
+        "D":  "damage = sum(n_i / N_fi) by Miner's rule",
+        "C1, C2, C1', C2'": "fitting constants"
+      },
+      "_simplification_iLLM_PD": "For our single-pass evaluation, we use a simplified linear approximation: FC% ≈ min(100, (n / N_f) · 100), where n is the design ESAL.",
+      "default_constants": {"C1": 1.0, "C2": 1.0, "C1_prime": -2.0, "C2_prime": -2.40874}
+    },
+    "design_criterion": {
+      "_ref": "AASHTOWare Pavement ME default reliability terminal value",
+      "FC_limit_pct": 25.0,
+      "_note": "Default for high-volume facilities; user-adjustable."
+    }
+  },
+
+  "rutting_model": {
+    "_ref": "NCHRP 1-37A Section 3.3.7",
+    "model_form_per_sublayer": "log10(ε_p/ε_r) = β_r1 + β_r2·log10(T_F) + β_r3·log10(N)  [implementation: ε_p/ε_r = 10^β_r1 · T_F^β_r2 · N^β_r3, equivalent log-form of NCHRP 1-37A Eq 3.3.7]",
+    "where": {
+      "ε_p": "permanent vertical strain (in/in)",
+      "ε_r": "resilient vertical strain (in/in)",
+      "T":   "temperature (°F)",
+      "N":   "number of load repetitions",
+      "k_z": "depth correction factor",
+      "β_r1, β_r2, β_r3": "calibration coefficients"
+    },
+    "national_calibration_coefficients_HMA": {
+      "_verification": "VERIFIED — NCHRP 1-37A national calibration",
+      "beta_r1": -3.4488,
+      "beta_r2":  1.5606,
+      "beta_r3":  0.4791,
+      "k1_intercept": 0.0,
+      "_note": "k1 in original notation is a separate intercept; for the form here, k1 = 0."
+    },
+    "total_rutting_combines": [
+      "HMA layer rutting (above formula)",
+      "Unbound base/subbase rutting (separate formula)",
+      "Subgrade rutting (separate formula)"
+    ],
+    "_simplification_iLLM_PD": "We compute HMA rutting only at a single equivalent temperature. Unbound layer rutting estimated via simpler form.",
+    "design_criterion": {
+      "RD_limit_mm": 19.0,
+      "_note": "Default for highways; user-adjustable. AASHTOWare default 0.75 inch = 19 mm."
+    }
+  },
+
+  "reference_climate": {
+    "_simplification_iLLM_PD": "Full ME-PDG uses 20-year hourly climate. We use single equivalent annual temperature.",
+    "default_MAT_C": 15.0,
+    "_note": "Mean annual temperature (°C). Affects HMA dynamic modulus.",
+    "temperature_zones": {
+      "cold":      {"MAT_C": 5,  "_example": "northern US, Canada"},
+      "moderate":  {"MAT_C": 15, "_example": "mid-latitude US, much of China"},
+      "warm":      {"MAT_C": 25, "_example": "southern US, southern China"},
+      "hot":       {"MAT_C": 30, "_example": "desert SW US, south India"}
+    }
+  },
+
+  "performance_criteria_defaults": {
+    "_ref": "AASHTOWare Pavement ME default performance criteria",
+    "by_road_class": {
+      "interstate": {
+        "fatigue_cracking_pct_max": 10.0,
+        "rutting_mm_max": 10.0,
+        "IRI_m_per_km_max": 2.7,
+        "_note": "Strictest criteria for high-volume interstate facilities"
+      },
+      "primary": {
+        "fatigue_cracking_pct_max": 20.0,
+        "rutting_mm_max": 13.0,
+        "IRI_m_per_km_max": 3.5
+      },
+      "secondary": {
+        "fatigue_cracking_pct_max": 35.0,
+        "rutting_mm_max": 19.0,
+        "IRI_m_per_km_max": 4.5,
+        "_note": "Most permissive criteria for local/secondary roads"
+      }
+    }
+  },
+
+  "structural_response_required": {
+    "ε_t_AC_bottom":      "Horizontal tensile strain at the bottom of HMA layer (microstrain)",
+    "ε_v_subgrade_top":   "Vertical compressive strain at the top of subgrade (microstrain)",
+    "_iLLM_PD_FEA_fields": {
+      "ε_t_AC_bottom":    "epsilon_a_microstrain  (same physical location as JTG ε_a)",
+      "ε_v_subgrade_top": "epsilon_z_microstrain  (same physical location as JTG ε_z)"
+    },
+    "_note": "By design, JTG and ME-PDG require the same FEA outputs from our axisymmetric model. Only the transfer functions differ."
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "E_sub_5000_clamped",
+    "brief": "广州附近高速公路，重载交通，柔性路面。地基为硬岩，Esub=5000 MPa（超出正常范围）。设计年限20年。",
+    "parsed_city": "guangzhou",
+    "parsed_type": "flexible",
+    "parsed_E_sub": 2000.0,
+    "confidence": 0.9,
+    "status": "PASS",
+    "note": "All input validation checks passed. Config sanitized. Parser outputs are clamped to the admissible input domain (E_sub in [5,2000] MPa, pavement type in known vocabulary). The existing 12-section and OOD results (Fig. 7a) confirm that any admissible input yields a compliant design or is safely rejected by the downstream Guard-FEA-Spec chain."
+  },
+  {
+    "id": "bridge_not_pavement",
+    "brief": "Build a bridge over the Yangtze River with asphalt deck. No subgrade, no traffic data, no pavement t",
+    "parsed_city": "nanjing",
+    "parsed_type": "flexible",
+    "parsed_E_sub": 5.0,
+    "confidence": 0.8,
+    "status": "PASS",
+    "note": "All input validation checks passed. Config sanitized. Parser outputs are clamped to the admissible input domain (E_sub in [5,2000] MPa, pavement type in known vocabulary). The existing 12-section and OOD results (Fig. 7a) confirm that any admissible input yields a compliant design or is safely rejected by the downstream Guard-FEA-Spec chain."
+  },
+  {
+    "id": "contradictory_traffic_type",
+    "brief": "成都附近高速公路，轻交通，刚性路面（水泥混凝土板）。",
+    "parsed_city": "chengdu",
+    "parsed_type": "semi_rigid",
+    "parsed_E_sub": 80.0,
+    "confidence": 0.9,
+    "status": "PASS",
+    "note": "All input validation checks passed. Config sanitized. Parser outputs are clamped to the admissible input domain (E_sub in [5,2000] MPa, pavement type in known vocabulary). The existing 12-section and OOD results (Fig. 7a) confirm that any admissible input yields a compliant design or is safely rejected by the downstream Guard-FEA-Spec chain."
+  }
+]

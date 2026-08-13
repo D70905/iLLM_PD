@@ -1,0 +1,39 @@
+# iLLM-PD Python dependencies
+# Use with: pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+# ===============================================================================
+
+# === Phase 1 (current): FEA + verification ===
+numpy>=1.24,<2.0
+scipy>=1.10
+pyyaml>=6.0
+python-dotenv>=1.0
+
+# === Phase 2 (after MATLAB spec migration): RL ===
+# Uncomment when starting rl/ implementation
+# torch>=2.0
+# stable-baselines3>=2.0
+# gymnasium>=0.29
+# tensorboard>=2.14
+
+# === Phase 3 (HARA harness): multi-agent ===
+# Uncomment when starting agents/ implementation
+# langgraph>=0.2
+# langchain>=0.3
+# langchain-core>=0.3
+# openai>=1.40
+# anthropic>=0.30
+# httpx>=0.27
+# tenacity>=8.0
+
+# === Phase 3 optional: RAG (R2-3 grounded knowledge) ===
+# chromadb>=0.5
+# sentence-transformers>=3.0
+
+# === Common: testing, plotting, analysis ===
+pytest>=7.4
+pandas>=2.0
+matplotlib>=3.7
+
+# === Optional: Jupyter for exploratory analysis ===
+# jupyter>=1.0
+# ipywidgets>=8.0

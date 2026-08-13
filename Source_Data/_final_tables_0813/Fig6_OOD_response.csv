@@ -1,0 +1,9 @@
+﻿scenario_id,category,pavement_type,mode,n,MAAT_C,annual_ESAL_BZZ100,total_ESAL_BZZ100,mean_reward,final_DSR,single_design_SCR,episode_SCR,minimum_B3_permanent_deformation_margin,FEA_escalation_rate,NumericalGuard_events_total
+cl_extreme_cold,climate,semi_rigid,escalation_enabled,3,-5.0,,,0.123,1.0,1.0,1.0,19.496,0.0,12
+cl_extreme_hot,climate,semi_rigid,escalation_enabled,3,28.0,,,-0.059,1.0,0.75,0.0,0.587,0.95,0
+mat_soft_base,material,flexible,escalation_enabled,3,,,,-1.5,1.0,1.0,1.0,1.693,0.0,60
+sg_ltpp_48_0001,subgrade,flexible,escalation_enabled,3,,,,0.573,1.0,1.0,1.0,1.195,0.0,6
+sg_very_soft,subgrade,semi_rigid,escalation_enabled,3,,,,0.564,1.0,1.0,1.0,2.399,0.0,3
+sg_very_stiff,subgrade,semi_rigid,escalation_enabled,3,,,,0.367,1.0,1.0,1.0,1.985,0.0,6
+tr_super_heavy,traffic,semi_rigid,escalation_enabled,3,,10000000.0,,0.733,1.0,1.0,1.0,1.236,0.0,0
+tr_ultra_light,traffic,flexible,escalation_enabled,3,,100000.0,,-0.782,1.0,1.0,1.0,10.336,0.0,39

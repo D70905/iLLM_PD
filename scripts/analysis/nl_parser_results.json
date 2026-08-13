@@ -1,0 +1,210 @@
+{
+  "suite_a": [
+    {
+      "brief_id": "full_chinese_1",
+      "checks": {
+        "city": {
+          "predicted": "harbin",
+          "match": true
+        },
+        "road_class": {
+          "predicted": "highway_1",
+          "match": true
+        },
+        "traffic_level": {
+          "predicted": "heavy",
+          "match": true
+        },
+        "pavement_type": {
+          "predicted": "flexible",
+          "match": true
+        },
+        "E_subgrade": {
+          "predicted": 80.0,
+          "within_2x": true
+        }
+      },
+      "confidence": 1.0,
+      "elapsed_s": 8.516907930374146
+    },
+    {
+      "brief_id": "full_english_1",
+      "checks": {
+        "city": {
+          "predicted": "guangzhou",
+          "match": true
+        },
+        "road_class": {
+          "predicted": "expressway",
+          "match": true
+        },
+        "traffic_level": {
+          "predicted": "heavy",
+          "match": true
+        },
+        "pavement_type": {
+          "predicted": "flexible",
+          "match": true
+        },
+        "E_subgrade": {
+          "predicted": 700.0,
+          "within_2x": true
+        }
+      },
+      "confidence": 1.0,
+      "elapsed_s": 6.875784873962402
+    },
+    {
+      "brief_id": "full_chinese_2",
+      "checks": {
+        "city": {
+          "predicted": "nanjing",
+          "match": true
+        },
+        "road_class": {
+          "predicted": "highway_1",
+          "match": false
+        },
+        "traffic_level": {
+          "predicted": "heavy",
+          "match": true
+        },
+        "pavement_type": {
+          "predicted": "semi_rigid",
+          "match": true
+        },
+        "E_subgrade": {
+          "predicted": 60.0,
+          "within_2x": true
+        }
+      },
+      "confidence": 1.0,
+      "elapsed_s": 7.3723626136779785
+    },
+    {
+      "brief_id": "partial_no_traffic",
+      "checks": {
+        "city": {
+          "predicted": "changsha",
+          "match": true
+        },
+        "road_class": {
+          "predicted": "urban_trunk",
+          "match": true
+        },
+        "pavement_type": {
+          "predicted": "flexible",
+          "match": true
+        },
+        "E_subgrade": {
+          "predicted": 100.0,
+          "within_2x": true
+        }
+      },
+      "confidence": 1.0,
+      "elapsed_s": 7.519225358963013
+    },
+    {
+      "brief_id": "partial_no_subgrade",
+      "checks": {
+        "city": {
+          "predicted": "wuhan",
+          "match": true
+        },
+        "road_class": {
+          "predicted": "highway_1",
+          "match": false
+        },
+        "traffic_level": {
+          "predicted": "extra_heavy",
+          "match": true
+        },
+        "pavement_type": {
+          "predicted": "semi_rigid",
+          "match": true
+        }
+      },
+      "confidence": 0.9,
+      "elapsed_s": 7.134975433349609
+    },
+    {
+      "brief_id": "partial_vague_soil",
+      "checks": {
+        "city": {
+          "predicted": "shenyang",
+          "match": true
+        },
+        "road_class": {
+          "predicted": "highway_2",
+          "match": true
+        },
+        "traffic_level": {
+          "predicted": "medium",
+          "match": true
+        },
+        "pavement_type": {
+          "predicted": "flexible",
+          "match": true
+        }
+      },
+      "confidence": 0.9,
+      "elapsed_s": 6.49984335899353
+    },
+    {
+      "brief_id": "ambig_city_not_in_list",
+      "checks": {
+        "city": {
+          "predicted": "harbin",
+          "match": true
+        },
+        "road_class": {
+          "predicted": "highway_1",
+          "match": false
+        },
+        "traffic_level": {
+          "predicted": "heavy",
+          "match": true
+        },
+        "pavement_type": {
+          "predicted": "flexible",
+          "match": true
+        },
+        "E_subgrade": {
+          "predicted": 150.0,
+          "within_2x": true
+        }
+      },
+      "confidence": 1.0,
+      "elapsed_s": 7.339890956878662
+    },
+    {
+      "brief_id": "ambig_typo_city",
+      "checks": {
+        "city": {
+          "predicted": "shanghai",
+          "match": true
+        },
+        "road_class": {
+          "predicted": "highway_1",
+          "match": false
+        },
+        "traffic_level": {
+          "predicted": "heavy",
+          "match": true
+        },
+        "pavement_type": {
+          "predicted": "flexible",
+          "match": true
+        },
+        "E_subgrade": {
+          "predicted": 120.0,
+          "within_2x": true
+        }
+      },
+      "confidence": 1.0,
+      "elapsed_s": 6.569385290145874
+    }
+  ],
+  "suite_b": [],
+  "suite_c": []
+}

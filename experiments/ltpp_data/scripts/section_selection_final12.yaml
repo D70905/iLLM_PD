@@ -1,0 +1,185 @@
+# =============================================================
+# section_selection_final12.yaml  (v2 — matches extract_ltpp_sections.py)
+# Final 12-section matrix for LTPP validation (R2-1, R1-3, R2-6)
+# =============================================================
+# Coverage: 4 climate zones x 2 GPS families (6+6 split)
+# Subgrade dimension (Soft/Medium/Stiff) determined AFTER extraction
+# via FWD backcalculation of E_subgrade.
+#
+# Notes:
+#   1. "48_1001" in the original manuscript does NOT exist in LTPP SDR 39.
+#      We include 48_0001 (closest by ID, likely typo) and 48_1076
+#      (closest by stated criteria: GPS-1, Dry-No-Freeze).
+#   2. 30_7076 (Montana) auto-labeled DNF (mean_temp 7.5C at threshold);
+#      manually overridden to Dry-Freeze (Montana winter freeze >> 0 days).
+#   3. Extra fields are documentation only — extract_ltpp_sections.py's
+#      SectionSpec ignores unknown keys.
+# =============================================================
+
+sdr:
+  states_dir: "D:/iLLM_PD_new/experiments/ltpp_data/sdr39/states"
+  output_dir: "D:/iLLM_PD_new/experiments/ltpp_data/sdr39/extracted"
+  sdr_version: "SDR39_2025_09"
+
+output:
+  master_xlsx: "D:/iLLM_PD_new/experiments/ltpp_data/ltpp_12_sections.xlsx"
+
+# =============================================================
+# The 12 sections
+# =============================================================
+sections:
+
+  # ---- GPS-1 (granular base, ACUB) ----
+
+  - section_id: "48_0001"
+    state_code: "48"
+    shrp_id: "0001"
+    state_name: "Texas"
+    climate_zone: "Wet-NoFreeze"
+    expected_subgrade_bin: "unknown"
+    addresses_reviewer_comments: "R2-2 baseline-by-ID (paper 48_1001 likely typo for 48_0001); GPS-1 flexible"
+    is_baseline: true
+
+  - section_id: "48_1076"
+    state_code: "48"
+    shrp_id: "1076"
+    state_name: "Texas"
+    climate_zone: "Dry-NoFreeze"
+    expected_subgrade_bin: "unknown"
+    addresses_reviewer_comments: "R2-2 baseline-by-climate (paper claims DNF); GPS-1 flexible, 22yr IRI"
+    is_baseline: true
+
+  - section_id: "16_1010"
+    state_code: "16"
+    shrp_id: "1010"
+    state_name: "Idaho"
+    climate_zone: "Dry-Freeze"
+    expected_subgrade_bin: "unknown"
+    addresses_reviewer_comments: "R2-1 (only GPS-1 in DF), R1-2 (freeze effect on flexible)"
+    is_baseline: false
+
+  - section_id: "27_1085"
+    state_code: "27"
+    shrp_id: "1085"
+    state_name: "Minnesota"
+    climate_zone: "Wet-Freeze"
+    expected_subgrade_bin: "unknown"
+    addresses_reviewer_comments: "R2-1 (GPS-1 WF), R1-2 (wet+freeze)"
+    is_baseline: false
+
+  - section_id: "04_1034"
+    state_code: "04"
+    shrp_id: "1034"
+    state_name: "Arizona"
+    climate_zone: "Dry-NoFreeze"
+    expected_subgrade_bin: "unknown"
+    addresses_reviewer_comments: "R2-1 (GPS-1 DNF replicate), R1-4 (geographic spread west)"
+    is_baseline: false
+
+  - section_id: "12_1060"
+    state_code: "12"
+    shrp_id: "1060"
+    state_name: "Florida"
+    climate_zone: "Wet-NoFreeze"
+    expected_subgrade_bin: "unknown"
+    addresses_reviewer_comments: "R2-1 (GPS-1 WNF eastern US, sandy subgrade likely)"
+    is_baseline: false
+
+  # ---- GPS-2 (semi-rigid base, ACAB) ----
+
+  - section_id: "04_1065"
+    state_code: "04"
+    shrp_id: "1065"
+    state_name: "Arizona"
+    climate_zone: "Dry-NoFreeze"
+    expected_subgrade_bin: "unknown"
+    addresses_reviewer_comments: "R2-1 (GPS-2 DNF prime, 27yr IRI, matl 42 semi-rigid)"
+    is_baseline: false
+
+  - section_id: "12_4097"
+    state_code: "12"
+    shrp_id: "4097"
+    state_name: "Florida"
+    climate_zone: "Wet-NoFreeze"
+    expected_subgrade_bin: "unknown"
+    addresses_reviewer_comments: "R2-1 (GPS-2 WNF, 5 AC layers, matl 43 semi-rigid)"
+    is_baseline: false
+
+  - section_id: "30_7076"
+    state_code: "30"
+    shrp_id: "7076"
+    state_name: "Montana"
+    climate_zone: "Dry-Freeze"
+    expected_subgrade_bin: "unknown"
+    addresses_reviewer_comments: "R2-1 (only GPS-2 in DF, climate override Mt 7.5C to DF), R1-2 (freeze+semi-rigid)"
+    is_baseline: false
+
+  - section_id: "27_2023"
+    state_code: "27"
+    shrp_id: "2023"
+    state_name: "Minnesota"
+    climate_zone: "Wet-Freeze"
+    expected_subgrade_bin: "unknown"
+    addresses_reviewer_comments: "R2-1 (only GPS-2 in WF), R1-2 (semi-rigid in freeze)"
+    is_baseline: false
+
+  - section_id: "48_1109"
+    state_code: "48"
+    shrp_id: "1109"
+    state_name: "Texas"
+    climate_zone: "Wet-NoFreeze"
+    expected_subgrade_bin: "unknown"
+    addresses_reviewer_comments: "R2-1 (GPS-2 WNF Texas, matl 42 semi-rigid; same-state-as-baseline control)"
+    is_baseline: false
+
+  - section_id: "06_2004"
+    state_code: "06"
+    shrp_id: "2004"
+    state_name: "California"
+    climate_zone: "Dry-NoFreeze"
+    expected_subgrade_bin: "unknown"
+    addresses_reviewer_comments: "R2-1 (GPS-2 DNF California, matl 37 semi-rigid), R1-4 (geographic spread west coast)"
+    is_baseline: false
+
+
+# =============================================================
+# Tables to extract (matches Idaho v2 schema)
+# =============================================================
+tables_to_extract:
+  inv_layer:
+    sdr_table: "INV_LAYER"
+    query_mode: "direct"
+  tst_ac01:
+    sdr_table: "TST_AC01"
+    query_mode: "direct"
+  mon_defl_drop_data:
+    sdr_table: "MON_DEFL_DROP_DATA"
+    query_mode: "direct"
+  mon_profile_iri:
+    sdr_table: "ANALYSIS_IRI"
+    query_mode: "direct"
+  trf_esal:
+    sdr_table: "TRF_ESAL_COMPUTED"
+    query_mode: "direct"
+  clm_temp:
+    sdr_table: "CLM_VWS_TEMP_ANNUAL"
+    query_mode: "via_vws_link"
+  clm_precip:
+    sdr_table: "CLM_VWS_PRECIP_ANNUAL"
+    query_mode: "via_vws_link"
+  experiment_section:
+    sdr_table: "EXPERIMENT_SECTION"
+    query_mode: "direct"
+
+# =============================================================
+# Quality checks (advisory)
+# =============================================================
+quality_checks:
+  iri_min_n_years: 5
+  iri_min_n_timepoints: 5
+  construction_date_min: "1985-01-01"
+  construction_date_max: "2018-12-31"
+  fwd_min_n_tests: 3
+  subgrade_bin_boundaries:
+    soft_max: 50
+    medium_max: 100

@@ -1,0 +1,7 @@
+﻿item,description
+Workbook,SourceData_iLLM-PD_NC_final_0813.xlsx
+Purpose,Final source data workbook for Nature Communications resubmission
+Structure,Each worksheet is a flat data table with one header row and no embedded explanatory text rows
+Units,Units are provided in column headers where applicable
+LTPP labels,"Study sections are labeled Section 1 to Section 12, with original LTPP section IDs retained in a separate column"
+Generated from,Curated clean package for Nature Communications resubmission

@@ -1,0 +1,113 @@
+{
+  "source_csv": "C:\\Users\\Ivy\\Documents\\iLLM_PD\\reports\\ncat_design_benchmark_20260715\\real_fea_eval\\ncat_asbuilt_vs_design_real_fea_20260716_095838.csv",
+  "n_sections": 7,
+  "asbuilt_feasible_count": 0,
+  "alternative_feasible_count": 0,
+  "asbuilt_scr_mean": 0.0,
+  "alternative_scr_mean": 0.42857142857142855,
+  "asbuilt_dsr_mean": 0.19010995689598092,
+  "alternative_dsr_mean": 0.36391825046693604,
+  "dsr_improved_count": 7,
+  "dsr_relative_improvement_mean_pct": 89.80324494675345,
+  "cost_change_mean_pct": 1.6994620196043475,
+  "cost_change_min_pct": -0.2860169197462459,
+  "cost_change_max_pct": 6.270945733065969,
+  "pred_rut_change_mean_pct": -40.27527382850174,
+  "pred_rut_reduced_count": 7,
+  "eps_z_change_mean_pct": -16.859350685301642,
+  "eps_hma_change_mean_pct": -26.415477067163206,
+  "critical_indicators": {
+    "asbuilt": [
+      "B1_asphalt_fatigue"
+    ],
+    "alternative": [
+      "B1_asphalt_fatigue"
+    ]
+  },
+  "section_results": [
+    {
+      "section": "NCAT_CG_N1",
+      "asbuilt_dsr": 0.20071990321868982,
+      "alternative_dsr": 0.39956457039810567,
+      "dsr_relative_improvement_pct": 99.06574484682227,
+      "asbuilt_scr": 0.0,
+      "alternative_scr": 0.6666666666666666,
+      "cost_change_pct": 3.0763205851703335,
+      "pred_rut_change_pct": -40.729251125640985,
+      "asbuilt_critical": "B1_asphalt_fatigue",
+      "alternative_critical": "B1_asphalt_fatigue"
+    },
+    {
+      "section": "NCAT_CG_N2",
+      "asbuilt_dsr": 0.2048783711015064,
+      "alternative_dsr": 0.42425309717591264,
+      "dsr_relative_improvement_pct": 107.075590700454,
+      "asbuilt_scr": 0.0,
+      "alternative_scr": 0.6666666666666666,
+      "cost_change_pct": 3.228314979922775,
+      "pred_rut_change_pct": -40.08848340216167,
+      "asbuilt_critical": "B1_asphalt_fatigue",
+      "alternative_critical": "B1_asphalt_fatigue"
+    },
+    {
+      "section": "NCAT_CG_N5",
+      "asbuilt_dsr": 0.19014160247676098,
+      "alternative_dsr": 0.3197051797990013,
+      "dsr_relative_improvement_pct": 68.14057293856852,
+      "asbuilt_scr": 0.0,
+      "alternative_scr": 0.3333333333333333,
+      "cost_change_pct": -0.04096589606285006,
+      "pred_rut_change_pct": -37.928014277536484,
+      "asbuilt_critical": "B1_asphalt_fatigue",
+      "alternative_critical": "B1_asphalt_fatigue"
+    },
+    {
+      "section": "NCAT_CG_N8",
+      "asbuilt_dsr": 0.2053282334500699,
+      "alternative_dsr": 0.5143917021426195,
+      "dsr_relative_improvement_pct": 150.52166158518344,
+      "asbuilt_scr": 0.0,
+      "alternative_scr": 0.3333333333333333,
+      "cost_change_pct": 6.270945733065969,
+      "pred_rut_change_pct": -44.22516192277265,
+      "asbuilt_critical": "B1_asphalt_fatigue",
+      "alternative_critical": "B1_asphalt_fatigue"
+    },
+    {
+      "section": "NCAT_CG_S5",
+      "asbuilt_dsr": 0.17496972528074275,
+      "alternative_dsr": 0.2935773943436767,
+      "dsr_relative_improvement_pct": 67.78753802843624,
+      "asbuilt_scr": 0.0,
+      "alternative_scr": 0.3333333333333333,
+      "cost_change_pct": -0.23515862827391265,
+      "pred_rut_change_pct": -39.84960120123148,
+      "asbuilt_critical": "B1_asphalt_fatigue",
+      "alternative_critical": "B1_asphalt_fatigue"
+    },
+    {
+      "section": "NCAT_CG_S6",
+      "asbuilt_dsr": 0.17032598499575555,
+      "alternative_dsr": 0.28701869854548157,
+      "dsr_relative_improvement_pct": 68.51139804219184,
+      "asbuilt_scr": 0.0,
+      "alternative_scr": 0.3333333333333333,
+      "cost_change_pct": -0.2860169197462459,
+      "pred_rut_change_pct": -40.39302888307421,
+      "asbuilt_critical": "B1_asphalt_fatigue",
+      "alternative_critical": "B1_asphalt_fatigue"
+    },
+    {
+      "section": "NCAT_CG_S13",
+      "asbuilt_dsr": 0.18440587774834105,
+      "alternative_dsr": 0.3089171108637545,
+      "dsr_relative_improvement_pct": 67.52020848561786,
+      "asbuilt_scr": 0.0,
+      "alternative_scr": 0.3333333333333333,
+      "cost_change_pct": -0.11720571684563641,
+      "pred_rut_change_pct": -38.713375987094686,
+      "asbuilt_critical": "B1_asphalt_fatigue",
+      "alternative_critical": "B1_asphalt_fatigue"
+    }
+  ]
+}

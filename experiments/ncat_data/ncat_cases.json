@@ -1,0 +1,433 @@
+{
+  "dataset": "NCAT Test Track 2015-2021 Cracking Group (7 sections, ONE common structure)",
+  "structure_note": "1.5in surface + 2.25in intermediate + 2.25in AC base (=6in AC) over 6in aggregate base over subgrade",
+  "design_condition": "20C/10Hz, aging=RH",
+  "RECONCILE_BEFORE_USE": [
+    "1) 地基模量:基层=级配碎石/路基=A-4 已确认;精确Mr查NCAT 13-02或做敏感性扫描(80/114/150 MPa)",
+    "2) 路面温度:NCAT只有气温,B3车辙需用 air→pavement 偏移估温并披露",
+    "3) 轴载:实测为 20M×18kip ESAL;JTG用BZZ-100标准轴,需换算累计轴次",
+    "4) 开裂:实测全为top-down;B1为bottom-up疲劳,不可用此开裂验证B1"
+  ],
+  "cases": [
+    {
+      "section_id": "NCAT_CG_N1",
+      "envconfig": {
+        "init_thickness_m": [
+          0.0381,
+          0.0571,
+          0.0571,
+          0.1524,
+          0.1
+        ],
+        "init_modulus_MPa": [
+          7663.0,
+          5238.7,
+          5238.7,
+          207.0,
+          114.0
+        ],
+        "init_poisson": [
+          0.25,
+          0.3,
+          0.3,
+          0.4,
+          0.45
+        ],
+        "E_subgrade": 114.0,
+        "nu_subgrade": 0.45
+      },
+      "meta": {
+        "gps_family": "GPS-1 (flexible, AC on unbound aggregate base)",
+        "climate_zone": "warm",
+        "MAAT_C": 17.6,
+        "applied_ESAL_18kip": 20000000,
+        "aging_primary": "RH",
+        "estar_design_condition": "20C/10Hz",
+        "estar_surface_MPa_byCond": {
+          "4C_10Hz": 14863.7,
+          "20C_10Hz": 7663.0,
+          "40C_10Hz": 2485.7
+        },
+        "estar_ACbase_MPa_byCond": {
+          "4C_10Hz": 11832.3,
+          "20C_10Hz": 5238.7,
+          "40C_10Hz": 1553.7
+        },
+        "layer_mapping_assumption": "已据 rep18-04/rep21-03 确认: 面层(1.5in)=分段 'Nx-1' 主曲线; 中面层+沥青基层(各2.25in)=共用 HiMA 19mm 混合料='CG Base' 主曲线; 集料基层(6in)拆成2等分子层(弹性等价)。",
+        "foundation_VERIFY": "基层=级配碎石/路基=A-4(rep18-04/21-03 已定性确认); 精确Mr见NCAT 13-02; 建议路基Mr敏感性扫描",
+        "measured_final": {
+          "rut_mm": 5.3,
+          "topdown_cracking_pct_lane": 45.82,
+          "IRI_in_per_mile": 73.18,
+          "ESAL_at_final": 19998401.43523471,
+          "performance_complete_to_20M": true
+        },
+        "location": "NCAT Test Track, 1600 Lee Road 151, Opelika, AL 36804",
+        "references": [
+          "NCAT rep18-04 (Ch.2)",
+          "NCAT rep21-03 (Ch.2)"
+        ]
+      }
+    },
+    {
+      "section_id": "NCAT_CG_N2",
+      "envconfig": {
+        "init_thickness_m": [
+          0.0381,
+          0.0571,
+          0.0571,
+          0.1524,
+          0.1
+        ],
+        "init_modulus_MPa": [
+          9275.7,
+          5238.7,
+          5238.7,
+          207.0,
+          114.0
+        ],
+        "init_poisson": [
+          0.25,
+          0.3,
+          0.3,
+          0.4,
+          0.45
+        ],
+        "E_subgrade": 114.0,
+        "nu_subgrade": 0.45
+      },
+      "meta": {
+        "gps_family": "GPS-1 (flexible, AC on unbound aggregate base)",
+        "climate_zone": "warm",
+        "MAAT_C": 17.6,
+        "applied_ESAL_18kip": 20000000,
+        "aging_primary": "RH",
+        "estar_design_condition": "20C/10Hz",
+        "estar_surface_MPa_byCond": {
+          "4C_10Hz": 17004.7,
+          "20C_10Hz": 9275.7,
+          "40C_10Hz": 3152.3
+        },
+        "estar_ACbase_MPa_byCond": {
+          "4C_10Hz": 11832.3,
+          "20C_10Hz": 5238.7,
+          "40C_10Hz": 1553.7
+        },
+        "layer_mapping_assumption": "已据 rep18-04/rep21-03 确认: 面层(1.5in)=分段 'Nx-1' 主曲线; 中面层+沥青基层(各2.25in)=共用 HiMA 19mm 混合料='CG Base' 主曲线; 集料基层(6in)拆成2等分子层(弹性等价)。",
+        "foundation_VERIFY": "基层=级配碎石/路基=A-4(rep18-04/21-03 已定性确认); 精确Mr见NCAT 13-02; 建议路基Mr敏感性扫描",
+        "measured_final": {
+          "rut_mm": 5.38,
+          "topdown_cracking_pct_lane": 13.22,
+          "IRI_in_per_mile": 47.91,
+          "ESAL_at_final": 19998401.43523471,
+          "performance_complete_to_20M": true
+        },
+        "location": "NCAT Test Track, 1600 Lee Road 151, Opelika, AL 36804",
+        "references": [
+          "NCAT rep18-04 (Ch.2)",
+          "NCAT rep21-03 (Ch.2)"
+        ]
+      }
+    },
+    {
+      "section_id": "NCAT_CG_N5",
+      "envconfig": {
+        "init_thickness_m": [
+          0.0381,
+          0.0571,
+          0.0571,
+          0.1524,
+          0.1
+        ],
+        "init_modulus_MPa": [
+          5905.3,
+          5238.7,
+          5238.7,
+          207.0,
+          114.0
+        ],
+        "init_poisson": [
+          0.25,
+          0.3,
+          0.3,
+          0.4,
+          0.45
+        ],
+        "E_subgrade": 114.0,
+        "nu_subgrade": 0.45
+      },
+      "meta": {
+        "gps_family": "GPS-1 (flexible, AC on unbound aggregate base)",
+        "climate_zone": "warm",
+        "MAAT_C": 17.6,
+        "applied_ESAL_18kip": 20000000,
+        "aging_primary": "RH",
+        "estar_design_condition": "20C/10Hz",
+        "estar_surface_MPa_byCond": {
+          "4C_10Hz": 12157.3,
+          "20C_10Hz": 5905.3,
+          "40C_10Hz": 1829.3
+        },
+        "estar_ACbase_MPa_byCond": {
+          "4C_10Hz": 11832.3,
+          "20C_10Hz": 5238.7,
+          "40C_10Hz": 1553.7
+        },
+        "layer_mapping_assumption": "已据 rep18-04/rep21-03 确认: 面层(1.5in)=分段 'Nx-1' 主曲线; 中面层+沥青基层(各2.25in)=共用 HiMA 19mm 混合料='CG Base' 主曲线; 集料基层(6in)拆成2等分子层(弹性等价)。",
+        "foundation_VERIFY": "基层=级配碎石/路基=A-4(rep18-04/21-03 已定性确认); 精确Mr见NCAT 13-02; 建议路基Mr敏感性扫描",
+        "measured_final": {
+          "rut_mm": 1.54,
+          "topdown_cracking_pct_lane": 21.05,
+          "IRI_in_per_mile": 78.18,
+          "ESAL_at_final": 15344150.842755811,
+          "performance_complete_to_20M": false
+        },
+        "location": "NCAT Test Track, 1600 Lee Road 151, Opelika, AL 36804",
+        "references": [
+          "NCAT rep18-04 (Ch.2)",
+          "NCAT rep21-03 (Ch.2)"
+        ]
+      }
+    },
+    {
+      "section_id": "NCAT_CG_N8",
+      "envconfig": {
+        "init_thickness_m": [
+          0.0381,
+          0.0571,
+          0.0571,
+          0.1524,
+          0.1
+        ],
+        "init_modulus_MPa": [
+          11406.3,
+          5238.7,
+          5238.7,
+          207.0,
+          114.0
+        ],
+        "init_poisson": [
+          0.25,
+          0.3,
+          0.3,
+          0.4,
+          0.45
+        ],
+        "E_subgrade": 114.0,
+        "nu_subgrade": 0.45
+      },
+      "meta": {
+        "gps_family": "GPS-1 (flexible, AC on unbound aggregate base)",
+        "climate_zone": "warm",
+        "MAAT_C": 17.6,
+        "applied_ESAL_18kip": 20000000,
+        "aging_primary": "RH",
+        "estar_design_condition": "20C/10Hz",
+        "estar_surface_MPa_byCond": {
+          "4C_10Hz": 18075.7,
+          "20C_10Hz": 11406.3,
+          "40C_10Hz": 4763.0
+        },
+        "estar_ACbase_MPa_byCond": {
+          "4C_10Hz": 11832.3,
+          "20C_10Hz": 5238.7,
+          "40C_10Hz": 1553.7
+        },
+        "layer_mapping_assumption": "已据 rep18-04/rep21-03 确认: 面层(1.5in)=分段 'Nx-1' 主曲线; 中面层+沥青基层(各2.25in)=共用 HiMA 19mm 混合料='CG Base' 主曲线; 集料基层(6in)拆成2等分子层(弹性等价)。",
+        "foundation_VERIFY": "基层=级配碎石/路基=A-4(rep18-04/21-03 已定性确认); 精确Mr见NCAT 13-02; 建议路基Mr敏感性扫描",
+        "measured_final": {
+          "rut_mm": 1.43,
+          "topdown_cracking_pct_lane": 70.82,
+          "IRI_in_per_mile": 85.57,
+          "ESAL_at_final": 15876900.627486495,
+          "performance_complete_to_20M": false
+        },
+        "location": "NCAT Test Track, 1600 Lee Road 151, Opelika, AL 36804",
+        "references": [
+          "NCAT rep18-04 (Ch.2)",
+          "NCAT rep21-03 (Ch.2)"
+        ]
+      }
+    },
+    {
+      "section_id": "NCAT_CG_S5",
+      "envconfig": {
+        "init_thickness_m": [
+          0.0381,
+          0.0571,
+          0.0571,
+          0.1524,
+          0.1
+        ],
+        "init_modulus_MPa": [
+          4480.7,
+          5238.7,
+          5238.7,
+          207.0,
+          114.0
+        ],
+        "init_poisson": [
+          0.25,
+          0.3,
+          0.3,
+          0.4,
+          0.45
+        ],
+        "E_subgrade": 114.0,
+        "nu_subgrade": 0.45
+      },
+      "meta": {
+        "gps_family": "GPS-1 (flexible, AC on unbound aggregate base)",
+        "climate_zone": "warm",
+        "MAAT_C": 17.6,
+        "applied_ESAL_18kip": 20000000,
+        "aging_primary": "RH",
+        "estar_design_condition": "20C/10Hz",
+        "estar_surface_MPa_byCond": {
+          "4C_10Hz": 10461.3,
+          "20C_10Hz": 4480.7,
+          "40C_10Hz": 1362.3
+        },
+        "estar_ACbase_MPa_byCond": {
+          "4C_10Hz": 11832.3,
+          "20C_10Hz": 5238.7,
+          "40C_10Hz": 1553.7
+        },
+        "layer_mapping_assumption": "已据 rep18-04/rep21-03 确认: 面层(1.5in)=分段 'Nx-1' 主曲线; 中面层+沥青基层(各2.25in)=共用 HiMA 19mm 混合料='CG Base' 主曲线; 集料基层(6in)拆成2等分子层(弹性等价)。",
+        "foundation_VERIFY": "基层=级配碎石/路基=A-4(rep18-04/21-03 已定性确认); 精确Mr见NCAT 13-02; 建议路基Mr敏感性扫描",
+        "measured_final": {
+          "rut_mm": 3.99,
+          "topdown_cracking_pct_lane": 1.97,
+          "IRI_in_per_mile": 49.49,
+          "ESAL_at_final": 19998401.43523471,
+          "performance_complete_to_20M": true
+        },
+        "location": "NCAT Test Track, 1600 Lee Road 151, Opelika, AL 36804",
+        "references": [
+          "NCAT rep18-04 (Ch.2)",
+          "NCAT rep21-03 (Ch.2)"
+        ]
+      }
+    },
+    {
+      "section_id": "NCAT_CG_S6",
+      "envconfig": {
+        "init_thickness_m": [
+          0.0381,
+          0.0571,
+          0.0571,
+          0.1524,
+          0.1
+        ],
+        "init_modulus_MPa": [
+          4151.0,
+          5238.7,
+          5238.7,
+          207.0,
+          114.0
+        ],
+        "init_poisson": [
+          0.25,
+          0.3,
+          0.3,
+          0.4,
+          0.45
+        ],
+        "E_subgrade": 114.0,
+        "nu_subgrade": 0.45
+      },
+      "meta": {
+        "gps_family": "GPS-1 (flexible, AC on unbound aggregate base)",
+        "climate_zone": "warm",
+        "MAAT_C": 17.6,
+        "applied_ESAL_18kip": 20000000,
+        "aging_primary": "RH",
+        "estar_design_condition": "20C/10Hz",
+        "estar_surface_MPa_byCond": {
+          "4C_10Hz": 9934.7,
+          "20C_10Hz": 4151.0,
+          "40C_10Hz": 1647.3
+        },
+        "estar_ACbase_MPa_byCond": {
+          "4C_10Hz": 11832.3,
+          "20C_10Hz": 5238.7,
+          "40C_10Hz": 1553.7
+        },
+        "layer_mapping_assumption": "已据 rep18-04/rep21-03 确认: 面层(1.5in)=分段 'Nx-1' 主曲线; 中面层+沥青基层(各2.25in)=共用 HiMA 19mm 混合料='CG Base' 主曲线; 集料基层(6in)拆成2等分子层(弹性等价)。",
+        "foundation_VERIFY": "基层=级配碎石/路基=A-4(rep18-04/21-03 已定性确认); 精确Mr见NCAT 13-02; 建议路基Mr敏感性扫描",
+        "measured_final": {
+          "rut_mm": 3.84,
+          "topdown_cracking_pct_lane": 1.34,
+          "IRI_in_per_mile": 54.48,
+          "ESAL_at_final": 19998401.43523471,
+          "performance_complete_to_20M": true
+        },
+        "location": "NCAT Test Track, 1600 Lee Road 151, Opelika, AL 36804",
+        "references": [
+          "NCAT rep18-04 (Ch.2)",
+          "NCAT rep21-03 (Ch.2)"
+        ]
+      }
+    },
+    {
+      "section_id": "NCAT_CG_S13",
+      "envconfig": {
+        "init_thickness_m": [
+          0.0381,
+          0.0571,
+          0.0571,
+          0.1524,
+          0.1
+        ],
+        "init_modulus_MPa": [
+          5286.0,
+          5238.7,
+          5238.7,
+          207.0,
+          114.0
+        ],
+        "init_poisson": [
+          0.25,
+          0.3,
+          0.3,
+          0.4,
+          0.45
+        ],
+        "E_subgrade": 114.0,
+        "nu_subgrade": 0.45
+      },
+      "meta": {
+        "gps_family": "GPS-1 (flexible, AC on unbound aggregate base)",
+        "climate_zone": "warm",
+        "MAAT_C": 17.6,
+        "applied_ESAL_18kip": 20000000,
+        "aging_primary": "RH",
+        "estar_design_condition": "20C/10Hz",
+        "estar_surface_MPa_byCond": {
+          "4C_10Hz": 11192.3,
+          "20C_10Hz": 5286.0,
+          "40C_10Hz": null
+        },
+        "estar_ACbase_MPa_byCond": {
+          "4C_10Hz": 11832.3,
+          "20C_10Hz": 5238.7,
+          "40C_10Hz": 1553.7
+        },
+        "layer_mapping_assumption": "已据 rep18-04/rep21-03 确认: 面层(1.5in)=分段 'Nx-1' 主曲线; 中面层+沥青基层(各2.25in)=共用 HiMA 19mm 混合料='CG Base' 主曲线; 集料基层(6in)拆成2等分子层(弹性等价)。",
+        "foundation_VERIFY": "基层=级配碎石/路基=A-4(rep18-04/21-03 已定性确认); 精确Mr见NCAT 13-02; 建议路基Mr敏感性扫描",
+        "measured_final": {
+          "rut_mm": 5.77,
+          "topdown_cracking_pct_lane": 0.0,
+          "IRI_in_per_mile": 72.57,
+          "ESAL_at_final": 19998401.43523471,
+          "performance_complete_to_20M": true
+        },
+        "location": "NCAT Test Track, 1600 Lee Road 151, Opelika, AL 36804",
+        "references": [
+          "NCAT rep18-04 (Ch.2)",
+          "NCAT rep21-03 (Ch.2)"
+        ]
+      }
+    }
+  ]
+}

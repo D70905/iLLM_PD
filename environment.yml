@@ -1,0 +1,52 @@
+name: illm_pd
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python
+  - python=3.10
+
+  # Core scientific stack (faster from conda)
+  - numpy>=1.24,<2.0
+  - scipy>=1.10
+  - pandas>=2.0
+  - matplotlib>=3.7
+
+  # Config / env
+  - pyyaml>=6.0
+  - python-dotenv>=1.0
+
+  # Testing
+  - pytest>=7.4
+
+  # pip-installable extras (Phase 2/3 — uncomment when needed)
+  - pip
+  - pip:
+    # Phase 2: RL  (uncomment in Phase 2)
+    # - torch>=2.0
+    # - stable-baselines3>=2.0
+    # - gymnasium>=0.29
+    # Phase 3: multi-agent  (uncomment in Phase 3)
+    # - langgraph>=0.2
+    # - langchain>=0.3
+    # - openai>=1.40
+    # - anthropic>=0.30
+    # - httpx>=0.27
+    # Phase 3: RAG  (optional)
+    # - chromadb>=0.5
+    # - sentence-transformers>=3.0
+    []   # placeholder; remove when uncommenting items above
+
+# === Setup steps ===
+# Method A (one-shot via conda):
+#     conda env create -f environment.yml
+#     conda activate illm_pd
+#
+# Method B (conda env + pip for everything):
+#     conda create -n illm_pd python=3.10 -y
+#     conda activate illm_pd
+#     pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+#
+# Verify:
+#     python scripts/check_environment.py

@@ -1,0 +1,8 @@
+﻿section_id,state_code,state_name,climate_zone,E_subgrade_MPa,subgrade_bin,gps_family
+NCAT_CG_N1,01,Alabama,warm,103.0,NCAT_CG,GPS-1
+NCAT_CG_N2,01,Alabama,warm,103.0,NCAT_CG,GPS-1
+NCAT_CG_N5,01,Alabama,warm,103.0,NCAT_CG,GPS-1
+NCAT_CG_N8,01,Alabama,warm,103.0,NCAT_CG,GPS-1
+NCAT_CG_S5,01,Alabama,warm,103.0,NCAT_CG,GPS-1
+NCAT_CG_S6,01,Alabama,warm,103.0,NCAT_CG,GPS-1
+NCAT_CG_S13,01,Alabama,warm,103.0,NCAT_CG,GPS-1

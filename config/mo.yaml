@@ -1,0 +1,28 @@
+# config/mo.yaml — 多目标(成本+碳)扩展配置 (与 env/reward/lifecycle 真实参数对齐)
+carbon:
+  provider: ec3                 # ec3 | ecoinvent | indicative
+  cache_path: experiments/carbon_factors_cache.csv
+  use_phase_gwp: 0.0            # 基线不计使用阶段; 敏感性时改
+
+lcc:                            # 复用 lifecycle_lcc_intl.lcc_npv_usd
+  discount_rate: 0.04           # FHWA 默认 (env: 0.04)
+  design_life_years_lcc: 20.0   # env.EnvConfig.design_life_years_lcc
+
+design_case:                    # 默认上下文 (取自 EnvConfig)
+  pavement_type: flexible       # flexible | semi_rigid
+  protocol_name: JTG_D50_2017
+  road_class: expressway
+  traffic_level: heavy
+  E_subgrade: 60.0
+  nu_subgrade: 0.40
+  poisson: [0.25, 0.30, 0.30, 0.25, 0.35]
+  design_life: 15
+  surrogate_ckpt: output/surrogate_model/surrogate_v3.pt
+
+reward_mo:
+  P_barrier: 10.0               # 合规屏障; 做 {5,10,20,50} 不敏感性扫描
+  lambda_grid: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+
+nsga2:
+  pop_size: 40
+  n_gen: 30                     # n_var=10 (厚度5 + 模量5); 界来自 GuardConfig
